@@ -1,0 +1,113 @@
+:root{
+    --dark: #16191c;
+    --dark-x: #1e2126;
+    --light: #ffffff;
+}
+
+body{
+    background: linear-gradient(to right,#7e33c9, #3b79dd, #1b8892);
+    font-family: 'Spartan', sans-serif;
+    font-weight: 300;
+    color: var(--dark)
+}
+
+.bg-dark {background-color: var(--dark) !important;}
+.bg-dark-x{ background-color: var(--dark-x);}
+
+.form-control, .btn{
+    min-height: 3.125rem;
+    line-height: initial;
+
+}
+
+.img-1{
+    background-image: url("/img/GatoLindo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.img-2{
+    background-image:  url("/img/PerroLindo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.me-2{
+    border-radius:10px;
+    width: 300px;
+}
+.buscador{
+    margin:0px 50px 0px 0px;
+}
+.btn-outline-succes{
+    border :3px solid black;
+}
+.btn-outline-succes:hover{
+    background-color:#99ccff;
+}
+.iconopatas{
+    width:40px;
+    height:40px;
+    border:none;
+}
+b{
+    font-size: 30px;
+}
+.bi::before{
+    background-size: 5rem 5rem;
+}
+.bi-person-fill{
+    font-size: 30px;
+}
+.bi-list{
+    font-size: 30px;
+}
+.nav-link{
+    margin:0px 0px 0px 30px;
+}
+.dropdown-menu{
+    margin-left:10px;
+}
+.d-flex{
+    margin-right: 30px;
+    width: 500px;
+}
+.xxxx:hover{
+    background-color:black;
+    color:#ffffff;
+    
+}
+   
+.xxxx{
+    border-color: black;
+    color:black;
+    background-color:#ffffff;
+}
+
+.mensajeError {
+    color: var(--error);
+    margin-top: 0px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .mensajeCorrecto {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .form-termsAndConditions {
+    margin-left: 15px;
+    position: relative;
+    color: var(--ctexto);
+    font-size: 13px;
+  }
+  
+  .form-termsAndConditions label::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border: 1px solid var(--cnegro);
+    position: absolute;
+    left: -14px;
+  }

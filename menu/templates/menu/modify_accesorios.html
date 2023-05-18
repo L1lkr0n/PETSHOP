@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PestShop</title>
+    <link rel="icon" href="img/patas.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/modify_accesorios.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body >
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><b>PetShop</b><img class="iconopatas" src="img/patas.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!--menu-->
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                  <i class="bi bi-list"><b>MENU</b></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="add_newaccesorios.html">Agregar</a></li>
+                    <li><a class="dropdown-item" href="delete_accesorios.html">Eliminar</a></li>
+                    <li><a class="dropdown-item" href="listar_accesorios.html">Listar</a></li>
+                  </ul>
+                </li>
+              </ul>
+            <!--buscador-->
+            <div class="buscador">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Busca en petshop" aria-label="Buscar">
+                <button class="btn xxxx" type="submit"><i class="bi bi-search"></i></button>
+              </form>
+            </div>
+            <!--inicio sesion-->
+          </div>
+        </div>
+    </nav>
+    <!--formulario-->
+    <div class="container">
+      <h3 style="text-align: center;">Modificar</h3>
+      <hr class="separador">
+      <form id="form" nethod="post">
+        <label class="form-label"><h4>Objeto</h4></label>
+        <div class="radio">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="Collar" required>
+            <label class="form-check-label" for="Collar">
+              Collar
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="Bandana" required>
+            <label class="form-check-label" for="Bandana">
+              Bandana
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="Correa" required>
+            <label class="form-check-label" for="Correa">
+              Correa
+            </label>
+          </div>
+        </div>
+        <hr class="separador">
+        <div class="row">
+          <div class="col">
+            <label class="form-label"><h4>Columna</h4></label>
+            <div class="radio">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="flexRadioDefault2" id="col2" required>
+                <label class="form-check-label" for="col2">
+                  2
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="flexRadioDefault2" id="col3" required>
+                <label class="form-check-label" for="col3">
+                  3
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="flexRadioDefault2" id="col4" required>
+                <label class="form-check-label" for="col4">
+                  4
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <label class="form-label"><h4>Fila</h4></label>
+            <div class="radio">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="flexRadioDefault3" id="fila1" required>
+                <label class="form-check-label" for="fila1">
+                  1
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="flexRadioDefault3" id="fila2" required>
+                <label class="form-check-label" for="fila2">
+                  2
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="flexRadioDefault3" id="fila3" required>
+                <label class="form-check-label" for="fila3">
+                  3
+                </label>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <hr class="separador">
+        <div class="mb-3">
+          <label for="imagen" class="form-label"><h4>Imágen</h4></label>
+          <input class="form-control" type="file" id="imagen">
+        </div>
+        <hr class="separador">
+        <label class="form-label"><h4>Datos</h4></label>
+        <div class="row">
+          <div class="col">
+            <div class="mb-3 v_nombre">
+              <label for="v_nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="v_nombre" placeholder="Nombre">
+              <p class="mensajeError"></p>
+            </div>
+          </div>  
+          <div class="col">
+            <div class="mb-3 v_color">
+              <label for="v_color" class="form-label">Color</label>
+              <input type="text" class="form-control" id="v_color" placeholder="Color">
+              <p class="mensajeError"></p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="mb-3 v_talla">
+              <label for="v_talla" class="form-label">Talla</label>
+              <input type="text" class="form-control" id="v_talla" placeholder="Talla">
+              <p class="mensajeError"></p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="mb-3 v_tipo">
+              <label for="v_tipo" class="form-label">Tipo</label>
+              <input type="text" class="form-control" id="v_tipo" placeholder="Tipo">
+              <p class="mensajeError"></p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="mb-3 v_material">
+              <label for="v_material" class="form-label">Material</label>
+              <input type="text" class="form-control" id="v_material" placeholder="Material">
+              <p class="mensajeError"></p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="mb-3 v_precio">
+              <label for="v_precio" class="form-label">Precio</label>
+              <input type="text" class="form-control" id="v_precio" placeholder="Precio">
+              <p class="mensajeError"></p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6" style="text-align: center;">
+            <input type="submit" value="Limpiar">
+
+          </div>
+          <div class="col-sm-6" style="text-align: center;">
+            <input type="submit" value="Modificar">
+            <p class="mensajeCorrecto"></p>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="js/Modificar.js"></script>
+    <!--formulario-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous">
+    </script>
+</body>
+</html>
