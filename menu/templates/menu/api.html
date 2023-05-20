@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/ApiNoticias.css">
-    <link rel="stylesheet" href="css/api.css">
+    <link rel="stylesheet" href="{% static 'menu/css/ApiNoticias.css' %}">
+    <link rel="stylesheet" href="{% static 'menu/css/api.css' %}">
     <title>PestShop</title>
     <link rel="icon" href="img/patas.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -18,7 +18,7 @@
     <!--navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><b>PetShop</b><img class="iconopatas" src="img/patas.png"></a>
+          <a class="navbar-brand" href="#"><b>PetShop</b><img class="iconopatas" src="{% static 'menu/img/patas.png' %}"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -80,7 +80,7 @@
 
         </div>
     </div>
-    <script src="js/ApiNoticias.js"></script>
+    <script src="{% static 'menu/js/ApiNoticias.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous">
