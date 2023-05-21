@@ -59,10 +59,10 @@ def b_perrorayaslocas(request):
     return render(request,'menu/b_perrorayaslocas.html')
 
 def b_perrotrajelegante5(request):
-    return render(request,'menu/b_perroelegante5.html')
+    return render(request,'menu/b_perrotrajelegante5.html')
 
 def b_perrotrajelegante7(request):
-    return render(request,'menu/b_perroelegante7.html')
+    return render(request,'menu/b_perrotrajelegante7.html')
 
 def c_gatoazul(request):
     return render(request,'menu/c_gatoazul.html')
