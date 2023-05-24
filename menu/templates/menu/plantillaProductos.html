@@ -23,33 +23,33 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!--menu-->
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
                   <i class="bi bi-list"><b>MENU</b></i>
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="uno.html">Principal</a></li>
-                    <li><a class="dropdown-item" href="dos.html">Collares</a></li>
-                    <li><a class="dropdown-item" href="tres.html">Bandanas</a></li>
-                    <li><a class="dropdown-item" href="cuatro.html">Correas</a></li>
-                    <li><a class="dropdown-item" href="cinco.html">Publicidad</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="v_perfilusuario.html">Editar perfil</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="carrodecompra.html"><i class="bi bi-cart4"></i></a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="api.html">Noticias</a></li>
-                  </ul>
-                </li>
-              </ul>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="{% url 'uno' %}">Principal</a></li>
+                  <li><a class="dropdown-item" href="{% url 'dos' %}">Collares</a></li>
+                  <li><a class="dropdown-item" href="{% url 'tres' %}">Bandanas</a></li>
+                  <li><a class="dropdown-item" href="{% url 'cuatro' %}">Correas</a></li>
+                  <li><a class="dropdown-item" href="{% url 'cinco' %}">Publicidad</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="{% url 'v_perfilusuario' %}">Editar perfil</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="{% url 'carrodecompra' %}"><i class="bi bi-cart4"></i></a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="{% url 'api' %}">Noticias</a></li>
+                </ul>
+              </li>
+            </ul>
             <!--buscador-->
             <div class="buscador">
               <form class="d-flex" role="search">
@@ -58,7 +58,7 @@
               </form>
             </div>
             <!--inicio sesion-->
-            <a class="navbar-brand" href="InicioSesion.html"><i class="bi bi-person-fill"></i><b></b></a>
+            <a class="navbar-brand" href="{% url 'InicioSesion' %}"><i class="bi bi-person-fill"></i><b></b></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
