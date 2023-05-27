@@ -13,6 +13,14 @@ def tres(request):
 def registrarusuario(request):
     return render(request,'menu/registrarusuario.html')
 
+def registroUsuario(request):
+    nombreU = request.POST['v_nombre']
+    correoU = request.POST['v_gmail']
+    contraU = request.POST['v_contraseña']
+    preguntaS = request.POST['v_pregunta']
+    respuestaU = request.POST['v_respuesta']
+    
+
 def r_contraseña(request):
     return render(request,'menu/r_contraseña.html')
 
