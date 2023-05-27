@@ -30,9 +30,10 @@
                   <i class="bi bi-list"><b>MENU</b></i>
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="add_newaccesorios.html">Agregar</a></li>
-                    <li><a class="dropdown-item" href="modify_accesorios.html">Modificar</a></li>
-                    <li><a class="dropdown-item" href="listar_accesorios.html">Listar</a></li>
+                    <li><a class="dropdown-item" href="{% url 'add_newaccesorios' %}">Agregar</a></li>
+                    <li><a class="dropdown-item" href="{% url 'modify_accesorios' %}">Modificar</a></li>
+                    <li><a class="dropdown-item" href="{% url 'delete_accesorios' %}">Eliminar</a></li>
+                    <li><a class="dropdown-item" href="{% url 'listar_accesorios' %}">Listar</a></li>
                   </ul>
                 </li>
               </ul>
