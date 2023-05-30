@@ -1,17 +1,12 @@
 {% extends 'menu/plantillaProductos.html' %}
-
-{% load static%}
-
-{% block css %}
-
+    {% load static %}
+    {% block css %}
     <link rel="stylesheet" href="{% static 'menu/css/c_gatocarreras.css' %}">
-{% endblock css %}
-
-{% block imagen %}
+    {% endblock css %}
+          {% block imagen %}
           <img class="imagen" id="sextocollar" src="{% static 'menu/img/c3 (2).jpg' %}">
-{% endblock imagen %}
-
-{% block info %}
+          {% endblock imagen %}
+          {% block info %}
           <div class="info">
             <h5>
               <p>
@@ -23,4 +18,4 @@
               </p>
             </h5>
           </div>
-{% endblock info %}   
+          {% endblock info %}   

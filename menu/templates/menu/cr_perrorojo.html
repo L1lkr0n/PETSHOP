@@ -1,14 +1,11 @@
 {% extends 'menu/plantillaProductos.html' %}
-{% load static %}
+    {% load static %}
     {% block css %}
     <link rel="stylesheet" href="{% static 'menu/css/cr_perrorojo.css' %}">
     {% endblock css %}
-   
           {% block imagen %}  
           <img class="imagen" id="quintacorrea" src="{% static 'menu/img/c3 (1).jpg' %}">
           {% endblock imagen %}
-
-
           {% block info %}
           <div class="info">
             <h5>

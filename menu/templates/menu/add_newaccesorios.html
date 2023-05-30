@@ -1,7 +1,6 @@
-{%load static%}
 <!DOCTYPE html>
 <html lang="en">
-
+  {% load static %}
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -51,7 +50,8 @@
     </nav>
     <!--formulario-->
       <div class="container">
-        <form method="post">
+        <form action="{% url 'nombreProducto' %}" method="post">
+          {% csrf_token %}
           <h3 style="text-align: center;">Añadir</h3>
           <hr class="separador">
           <label class="form-label"><h4>Objeto</h4></label>
