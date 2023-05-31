@@ -50,6 +50,7 @@
     </nav>
     <!--formulario-->
       <div class="container">
+        {% csrf_token %}
         <form action="{% url 'nombreProducto' %}" method="post">
           {% csrf_token %}
           <h3 style="text-align: center;">Añadir</h3>
