@@ -61,7 +61,7 @@ b{
     margin-top: 5%;
 }
 
-.collar-uno{
+.collar-index{
     border: 4px solid black;
     background-color: white;
     border-radius: 20px;
@@ -72,11 +72,11 @@ b{
     height:100%;
     max-height:200px;
 }
-.collar-uno h4{
+.collar-index h4{
     margin-top: 30px;
     margin-left: 22px;
 }
-.collar-uno h2{
+.collar-index h2{
     margin-bottom: 40px;
     margin-left: 14px;
 }
@@ -87,7 +87,7 @@ b{
     height:150px;
     margin:20px 20px 0px 0px;
 }
-.collar-dos{
+.collar-collares{
     border: 4px solid black;
     background-color: white;
     border-radius: 20px;
@@ -98,11 +98,11 @@ b{
     height:100%;
     max-height:200px;
 }
-.collar-dos h4{
+.collar-collares h4{
     margin-top: 30px;
     margin-left: 22px;
 }
-.collar-dos h2{
+.collar-collares h2{
     margin-bottom: 40px;
     margin-left: 14px;
 }
@@ -113,7 +113,7 @@ b{
     height:150px;
     margin:20px 20px 0px 0px;
 }
-.collar-tres{
+.collar-bandanas{
     border: 4px solid black;
     background-color: white;
     border-radius: 20px;
@@ -124,11 +124,11 @@ b{
     height:100%;
     max-height:200px;
 }
-.collar-tres h4{
+.collar-bandanas h4{
     margin-top: 30px;
     margin-left: 22px;
 }
-.collar-tres h2{
+.collar-bandanas h2{
     margin-bottom: 40px;
     margin-left: 14px;
 }
@@ -139,7 +139,7 @@ b{
     height:150px;
     margin:20px 20px 0px 0px;
 }
-.collar-cuatro{
+.collar-correas{
     border: 4px solid black;
     background-color: white;
     border-radius: 20px;
@@ -150,11 +150,11 @@ b{
     height:100%;
     max-height:200px;
 }
-.collar-cuatro h4{
+.collar-correas h4{
     margin-top: 30px;
     margin-left: 22px;
 }
-.collar-cuatro h2{
+.collar-correas h2{
     margin-bottom: 40px;
     margin-left: 14px;
 }
@@ -165,7 +165,7 @@ b{
     height:150px;
     margin:20px 20px 0px 0px;
 }
-.collar-cinco{
+.collar-publicidad{
     border: 4px solid black;
     background-color: white;
     border-radius: 20px;
@@ -176,11 +176,11 @@ b{
     height:100%;
     max-height:200px;
 }
-.collar-cinco h4{
+.collar-publicidad h4{
     margin-top: 30px;
     margin-left: 22px;
 }
-.collar-cinco h2{
+.collar-publicidad h2{
     margin-bottom: 40px;
     margin-left: 14px;
 }
@@ -295,22 +295,22 @@ b{
     height:150px;
     margin:20px 20px 0px 0px;
 }
-.collar-uno .collar-dos .collar-tres .collar-cuatro .collar-cinco .collar-seis .collar-siete .collar-ocho .collar-nueve{
+.collar-index .collar-collares .collar-bandanas .collar-correas .collar-publicidad .collar-seis .collar-siete .collar-ocho .collar-nueve{
     transition: all 0.1s;
 }
-.collar-uno:hover{
+.collar-index:hover{
     transform: scale(1.1);
 }
-.collar-dos:hover{
+.collar-collares:hover{
     transform: scale(1.1);
 }
-.collar-tres:hover{
+.collar-bandanas:hover{
     transform: scale(1.1);
 }
-.collar-cuatro:hover{
+.collar-correas:hover{
     transform: scale(1.1);
 }
-.collar-cinco:hover{
+.collar-publicidad:hover{
     transform: scale(1.1);
 }
 .collar-seis:hover{
@@ -336,7 +336,7 @@ b{
         width:300px;
         height:500px;
     }
-    .collar-uno .collar-dos .collar-tres .collar-cuatro .collar-cinco .collar-seis .collar-siete .collar-ocho .collar-nueve{
+    .collar-index .collar-collares .collar-bandanas .collar-correas .collar-publicidad .collar-seis .collar-siete .collar-ocho .collar-nueve{
         width:250px !important;
     } 
 }

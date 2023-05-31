@@ -1,38 +1,38 @@
 from django.shortcuts import render
 
 # Create your views here.
-def uno(request):
-    return render(request,'menu/uno.html')
+def index(request):
+    return render(request,'menu/index.html')
 
 def v_perfilusuario(request):
     return render(request, 'menu/v_perfilusuario.html')
 
-def tres(request):
-    return render(request,'menu/tres.html')
+def bandanas(request):
+    return render(request,'menu/bandanas.html')
 
-def registrarusuario(request):
-    return render(request,'menu/registrarusuario.html')
+def h_RegistrarUsuario(request):
+    return render(request,'menu/h_RegistrarUsuario.html')
 
-def registroUsuario(request):
-    return render(request,'menu/registroUsuario.html')
+def f_RegistroUsuario(request):
+    return render(request,'menu/f_RegistroUsuario.html')
 
-def r_contraseña(request):
-    return render(request,'menu/r_contraseña.html')
+def recuperar_contrasena(request):
+    return render(request,'menu/recuperar_contrasena.html')
 
-def m_contraseña(request):
-    return render(request,'menu/m_contraseña.html')
+def modificar_contrasena(request):
+    return render(request,'menu/modificar_contrasena.html')
 
 def InicioSesion(request):
     return render(request,'menu/InicioSesion.html')
 
-def dos(request):
-    return render(request,'menu/dos.html')
+def collares(request):
+    return render(request,'menu/collares.html')
 
-def cuatro(request):
-    return render(request,'menu/cuatro.html')
+def correas(request):
+    return render(request,'menu/correas.html')
 
-def cinco(request):
-    return render(request,'menu/cinco.html')
+def publicidad(request):
+    return render(request,'menu/publicidad.html')
 
 def api(request):
     return render(request,'menu/api.html')
@@ -40,77 +40,77 @@ def api(request):
 def carrodecompra(request):
     return render(request, 'menu/carrodecompra.html')
 
-def b_gatoceleste(request):
-    return render(request,'menu/b_gatoceleste.html')
+def bandana_GatoCeleste(request):
+    return render(request,'menu/bandana_GatoCeleste.html')
 
-def b_gatocuadrille(request):
-    return render(request,'menu/b_gatocuadrille.html')
+def bandana_GatoCuadrille(request):
+    return render(request,'menu/bandana_GatoCuadrille.html')
 
-def b_gatofifi(request):
-    return render(request,'menu/b_gatofifi.html')
+def bandana_GatoFifi(request):
+    return render(request,'menu/bandana_GatoFifi.html')
 
-def b_gatolocura(request):
-    return render(request,'menu/b_gatolocura.html')
+def bandana_GatoLocura(request):
+    return render(request,'menu/bandana_GatoLocura.html')
 
-def b_gatostreet(request):
-    return render(request,'menu/b_gatostreet.html')
+def bandana_GatoStreet(request):
+    return render(request,'menu/bandana_GatoStreet.html')
 
-def b_perrocuadrille(request):
-    return render(request,'menu/b_perrocuadrille.html')
+def bandana_PerroCuadrille(request):
+    return render(request,'menu/bandana_PerroCuadrille.html')
 
-def b_perrorayaslocas(request):
-    return render(request,'menu/b_perrorayaslocas.html')
+def bandana_PerroRayasLocas(request):
+    return render(request,'menu/bandana_PerroRayasLocas.html')
 
-def b_perrotrajelegante5(request):
-    return render(request,'menu/b_perrotrajelegante5.html')
+def bandana_perroTrajeEleganteRojo(request):
+    return render(request,'menu/bandana_perroTrajeEleganteRojo.html')
 
-def b_perrotrajelegante7(request):
-    return render(request,'menu/b_perrotrajelegante7.html')
+def bandana_perroTrajeEleganteDorado(request):
+    return render(request,'menu/bandana_perroTrajeEleganteDorado.html')
 
-def c_gatoazul(request):
-    return render(request,'menu/c_gatoazul.html')
+def collar_GatoAzul(request):
+    return render(request,'menu/collar_GatoAzul.html')
 
-def c_gatocarreras(request):
-    return render(request,'menu/c_gatocarreras.html')
+def collar_GatoCarreras(request):
+    return render(request,'menu/collar_GatoCarreras.html')
 
-def c_gatofreestyle(request):
-    return render(request,'menu/c_gatofreestyle.html')
+def collar_gatoFreestyle(request):
+    return render(request,'menu/collar_gatoFreestyle.html')
 
-def c_gatosnvalentin(request):
-    return render(request,'menu/c_gatosnvalentin.html')
+def collar_gatoValentin(request):
+    return render(request,'menu/collar_gatoValentin.html')
 
-def c_gatostreet(request):
-    return render(request,'menu/c_gatostreet.html')
+def collar_gatoStreet(request):
+    return render(request,'menu/collar_gatoStreet.html')
 
-def c_perroblanco(request):
-    return render(request,'menu/c_perroblanco.html')
+def collar_PerroBlanco(request):
+    return render(request,'menu/collar_PerroBlanco.html')
 
-def c_perrocafe(request):
-    return render(request,'menu/c_perrocafe.html')
+def collar_PerroCafe(request):
+    return render(request,'menu/collar_PerroCafe.html')
 
-def c_perrorojo(request):
-    return render(request,'menu/c_perrorojo.html')
+def collar_PerroRojo(request):
+    return render(request,'menu/collar_PerroRojo.html')
 
-def c_perrovainilla(request):
-    return render(request,'menu/c_perrovainilla.html')
+def collar_PerroVainilla(request):
+    return render(request,'menu/collar_PerroVainilla.html')
 
-def cr_gatoazul(request):
-    return render(request,'menu/cr_gatoazul.html')
+def correa_GatoAzul(request):
+    return render(request,'menu/correa_GatoAzul.html')
 
-def cr_gatocuadrilles(request):
-    return render(request,'menu/cr_gatocuadrilles.html')
+def correa_GatoCuadrilles(request):
+    return render(request,'menu/correa_GatoCuadrilles.html')
 
-def cr_gatofreestyle(request):
-    return render(request,'menu/cr_gatofreestyle.html')
+def correa_GatoFreestyle(request):
+    return render(request,'menu/correa_GatoFreestyle.html')
 
-def cr_gatonegra(request):
-    return render(request,'menu/cr_gatonegra.html')
+def correa_GatoNegra(request):
+    return render(request,'menu/correa_GatoNegra.html')
 
-def cr_gatorosada(request):
-    return render(request,'menu/cr_gatorosada.html')
+def correa_GatoRosada(request):
+    return render(request,'menu/correa_GatoRosada.html')
 
-def cr_perroazul(request):
-    return render(request,'menu/cr_perroazul.html')
+def correa_PerroAzul(request):
+    return render(request,'menu/correa_PerroAzul.html')
 
 def cr_perronegra(request):
     return render(request,'menu/cr_perronegra.html')
@@ -118,11 +118,11 @@ def cr_perronegra(request):
 def cr_perronegracadena(request):
     return render(request,'menu/cr_perronegracadena.html')
 
-def cr_perrorojo(request):
-    return render(request,'menu/cr_perrorojo.html')
+def correa_PerroRojo(request):
+    return render(request,'menu/correa_PerroRojo.html')
 
-def modify_accesorios(request):
-    return render(request, 'menu/modify_accesorios.html')
+def modificarAccesorios(request):
+    return render(request, 'menu/modificarAccesorios.html')
 
 def listar_accesorios(request):
     return render(request, 'menu/listar_accesorios.html')
@@ -130,8 +130,8 @@ def listar_accesorios(request):
 def inicio_sesion_admin(request):
     return render(request, 'menu/inicio_sesion_admin.html')
 
-def delete_accesorios(request):
-    return render(request, 'menu/delete_accesorios.html')
+def borrar_Accesorios(request):
+    return render(request, 'menu/borrar_Accesorios.html')
 
-def add_newaccesorios(request):
-    return render(request, 'menu/add_newaccesorios.html')
+def agregar_Accesorios(request):
+    return render(request, 'menu/agregar_Accesorios.html')

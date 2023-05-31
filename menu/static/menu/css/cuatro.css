@@ -56,7 +56,7 @@ b{
 .espaciado_superior_cajas{
     margin-top: 5%;
 }
-.correa-uno{
+.correa-index{
     border: 4px solid black;
     background-color: white;
     border-radius: 20px;
@@ -67,11 +67,11 @@ b{
     height:100%;
     max-height:200px;
 }
-.correa-uno h4{
+.correa-index h4{
     margin-top: 30px;
     margin-left: 22px;
 }
-.correa-uno h2{
+.correa-index h2{
     margin-bottom: 40px;
     margin-left: 14px;
 }
@@ -82,7 +82,7 @@ b{
     height:150px;
     margin:20px 20px 0px 0px;
 }
-.correa-dos{
+.correa-collares{
     border: 4px solid black;
     background-color: white;
     border-radius: 20px;
@@ -93,11 +93,11 @@ b{
     height:100%;
     max-height:200px;
 }
-.correa-dos h4{
+.correa-collares h4{
     margin-top: 30px;
     margin-left: 22px;
 }
-.correa-dos h2{
+.correa-collares h2{
     margin-bottom: 40px;
     margin-left: 14px;
 }
@@ -108,7 +108,7 @@ b{
     height:150px;
     margin:20px 20px 0px 0px;
 }
-.correa-tres{
+.correa-bandanas{
     border: 4px solid black;
     background-color: white;
     border-radius: 20px;
@@ -119,11 +119,11 @@ b{
     height:100%;
     max-height:200px;
 }
-.correa-tres h4{
+.correa-bandanas h4{
     margin-top: 30px;
     margin-left: 22px;
 }
-.correa-tres h2{
+.correa-bandanas h2{
     margin-bottom: 40px;
     margin-left: 14px;
 }
@@ -134,7 +134,7 @@ b{
     height:150px;
     margin:20px 20px 0px 0px;
 }
-.correa-cuatro{
+.correa-correas{
     border: 4px solid black;
     background-color: white;
     border-radius: 20px;
@@ -145,11 +145,11 @@ b{
     height:100%;
     max-height:200px;
 }
-.correa-cuatro h4{
+.correa-correas h4{
     margin-top: 30px;
     margin-left: 22px;
 }
-.correa-cuatro h2{
+.correa-correas h2{
     margin-bottom: 40px;
     margin-left: 14px;
 }
@@ -160,7 +160,7 @@ b{
     height:150px;
     margin:20px 20px 0px 0px;
 }
-.correa-cinco{
+.correa-publicidad{
     border: 4px solid black;
     background-color: white;
     border-radius: 20px;
@@ -171,11 +171,11 @@ b{
     height:100%;
     max-height:200px;
 }
-.correa-cinco h4{
+.correa-publicidad h4{
     margin-top: 30px;
     margin-left: 22px;
 }
-.correa-cinco h2{
+.correa-publicidad h2{
     margin-bottom: 40px;
     margin-left: 14px;
 }
@@ -290,22 +290,22 @@ b{
     height:150px;
     margin:20px 20px 0px 0px;
 }
-.correa-uno .correa-dos .correa-tres .correa-cuatro .correa-cinco .correa-seis .correa-siete .correa-ocho .correa-nueve{
+.correa-index .correa-collares .correa-bandanas .correa-correas .correa-publicidad .correa-seis .correa-siete .correa-ocho .correa-nueve{
     transition: all 0.1s;
 }
-.correa-uno:hover{
+.correa-index:hover{
     transform: scale(1.1);
 }
-.correa-dos:hover{
+.correa-collares:hover{
     transform: scale(1.1);
 }
-.correa-tres:hover{
+.correa-bandanas:hover{
     transform: scale(1.1);
 }
-.correa-cuatro:hover{
+.correa-correas:hover{
     transform: scale(1.1);
 }
-.correa-cinco:hover{
+.correa-publicidad:hover{
     transform: scale(1.1);
 }
 .correa-seis:hover{

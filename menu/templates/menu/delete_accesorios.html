@@ -9,7 +9,7 @@
     <link rel="icon" href="img/patas.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'menu/css/delete_accesorios.css' %}">
+    <link rel="stylesheet" href="{% static 'menu/css/borrar_Accesorios.css' %}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 <body>
@@ -30,9 +30,9 @@
                   <i class="bi bi-list"><b>MENU</b></i>
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="{% url 'add_newaccesorios' %}">Agregar</a></li>
-                    <li><a class="dropdown-item" href="{% url 'modify_accesorios' %}">Modificar</a></li>
-                    <li><a class="dropdown-item" href="{% url 'delete_accesorios' %}">Eliminar</a></li>
+                    <li><a class="dropdown-item" href="{% url 'agregar_Accesorios' %}">Agregar</a></li>
+                    <li><a class="dropdown-item" href="{% url 'modificarAccesorios' %}">Modificar</a></li>
+                    <li><a class="dropdown-item" href="{% url 'borrar_Accesorios' %}">Eliminar</a></li>
                     <li><a class="dropdown-item" href="{% url 'listar_accesorios' %}">Listar</a></li>
                   </ul>
                 </li>
