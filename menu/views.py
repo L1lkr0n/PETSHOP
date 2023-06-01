@@ -33,14 +33,18 @@ def h_modificarContrasena(request):
 def f_modificacionContrasena(request):
     return render(request,'menu/f_modificacionContrasena.html')
 
-def h_inicioSesion(request): #esto es el ejemplo, debemos adaptarlo. se importaron 2 librerias.
+def h_inicioSesion(request):
+    return render(request,'menu/h_inicioSesion.html') 
+
+def f_iniciarSesion(request):
+    #esto es el ejemplo, debemos adaptarlo. se importaron 2 librerias.
     usuario1=request.POST['usuario']
     contrasena1=request.POST['contra']
     try:
         user1=User.objects.het(username=usuario1)
     except user.DoesNotExist:
         messages.error(request,'El usuario o la conrtraseña son incorrectas')
-        return direct ('Iniciar')
+        return redirect('Iniciar')
 
     pass_valida = check_password(contra1,user1.password)
     if not pass_valida:
@@ -52,16 +56,8 @@ def h_inicioSesion(request): #esto es el ejemplo, debemos adaptarlo. se importar
         login(request,user)
         if(usuario2.tipousuario.idTipoUsuario==1):
             return redirect ('menu_admin')
-            else:
-                contexto = {"usuario":usuario2}
-                
-              
-                
-                
-    
-                return render(request,'menu/h_inicioSesion.html') 
-
-def f_iniciarSesion(request):
+        else:
+            contexto = {"usuario":usuario2}
     return render(request,'menu/f_iniciarSesion.html')
 
 def collares(request):
