@@ -16,11 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from .views import index,collares,bandanas,correas,publicidad,carrodecompra,api,h_inicioSesion,h_modificarContrasena,h_recuperarContrasena,h_RegistrarUsuario,v_perfilusuario
+from .views import index,collares,bandanas,correas,publicidad,carrodecompra,ApiNoticias,h_inicioSesion,h_modificarContrasena,h_recuperarContrasena,h_RegistrarUsuario,v_perfilusuario
 from .views import h_AgregarAccesorios,inicio_sesion_admin,borrar_Accesorios,h_listarAccesorios,h_modificarAccesorios
 from .views import bandana_GatoCeleste,bandana_GatoCuadrille,bandana_GatoFifi,bandana_GatoLocura,bandana_GatoStreet,bandana_PerroCuadrille,bandana_PerroRayasLocas,bandana_perroTrajeEleganteRojo,bandana_perroTrajeEleganteDorado
 from .views import collar_GatoAzul,collar_GatoCarreras,collar_gatoFreestyle,collar_gatoValentin,collar_gatoStreet,collar_PerroBlanco,collar_PerroCafe,collar_PerroRojo,collar_PerroVainilla
 from .views import correa_GatoAzul,correa_GatoCuadrilles,correa_GatoFreestyle,correa_GatoNegra,correa_GatoRosada,correa_PerroAzul,cr_perronegra,cr_perronegracadena,correa_PerroRojo
+from .views import f_RegistroUsuario,f_recuperacionContrasena,f_modificacionContrasena,f_iniciarSesion,f_modificacionAccesorios,f_listadoAccesorios,f_AgregagoAccesorios,f_borrar_Accesorios
 
 urlpatterns = [
     path('',index,name="index"),
@@ -29,7 +30,15 @@ urlpatterns = [
     path('correas.html',correas,name="correas"),
     path('publicidad.html',publicidad,name="publicidad"),
     path('carrodecompra.html',carrodecompra,name="carrodecompra"),
-    path('api.html',api,name="api"),
+    path('ApiNoticias.html',ApiNoticias,name="ApiNoticias"),
+    path('f_RegistroUsuario.html',f_RegistroUsuario,name="f_RegistroUsuario"),
+    path('f_recuperacionContrasena.html',f_recuperacionContrasena,name="f_recuperacionContrasena"),
+    path('f_modificacionContrasena.html',f_modificacionContrasena,name="f_modificacionContrasena"),
+    path('f_iniciarSesion.html',f_iniciarSesion,name="f_iniciarSesion"),
+    path('f_modificacionAccesorios.html',f_modificacionAccesorios,name="f_modificacionAccesorios"),
+    path('f_listadoAccesorios.html',f_listadoAccesorios,name="f_listadoAccesorios"),
+    path('f_AgregagoAccesorios.html',f_AgregagoAccesorios,name="f_AgregagoAccesorios"),
+    path('f_borrar_Accesorios.html',f_borrar_Accesorios,name="f_borrar_Accesorios"),
     path('h_inicioSesion.html',h_inicioSesion,name="h_inicioSesion"),
     path('h_modificarContrasena.html',h_modificarContrasena,name="h_modificarContrasena"),
     path('h_recuperarContrasena.html',h_recuperarContrasena,name="h_recuperarContrasena"),

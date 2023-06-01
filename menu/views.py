@@ -26,7 +26,6 @@ def h_recuperarContrasena(request):
 def f_recuperacionContrasena(request):
     return render(request,'menu/f_recuperacionContrasena.html')
 
-
 def h_modificarContrasena(request):
     return render(request,'menu/h_modificarContrasena.html')
 
@@ -173,6 +172,9 @@ def inicio_sesion_admin(request):
 
 def borrar_Accesorios(request):
     return render(request, 'menu/borrar_Accesorios.html')
+
+def f_borrar_Accesorios(request):
+    return render(request, 'menu/f_borrar_Accesorios.html')
 
 def h_AgregarAccesorios(request):
     return render(request, 'menu/h_AgregarAccesorios.html')
