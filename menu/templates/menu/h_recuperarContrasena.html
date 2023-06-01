@@ -106,7 +106,7 @@
           </div>
           <div class="px-lg-5 py-lg-4 p-4 w-100 align-self-center">
             <h1 class="font-weight-bold mb-4">Recuperar contraseña</h1>
-            <form action="" class="form" id="form">
+            <form action="{% url 'f_recuperacionContrasena' %}" method="POST" enctype="multipart/form-data" class="form" id="form">
               {% csrf_token %}
               <div class="form-input v_email">
                 <label for="v_email" class="form-label">Correo Electronico</label>
