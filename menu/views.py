@@ -55,7 +55,7 @@ def h_inicioSesion(request): #esto es el ejemplo, debemos adaptarlo. se importar
             else:
                 contexto = {"usuario":usuario2}
                 
-                return render (request,'Inicio/index.html',contexto)
+              
                 
                 
     
