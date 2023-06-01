@@ -1,5 +1,8 @@
 from django.shortcuts import render
 from django.contrib.auth.models import User
+from django.contrib.auth.hashers import check_password
+from django.contrib.auth import authenticate,login, logout
+
 
 # Create your views here.
 def index(request):
@@ -30,8 +33,33 @@ def h_modificarContrasena(request):
 def f_modificacionContrasena(request):
     return render(request,'menu/f_modificacionContrasena.html')
 
-def h_inicioSesion(request):
-    return render(request,'menu/h_inicioSesion.html')
+def h_inicioSesion(request): #esto es el ejemplo, debemos adaptarlo. se importaron 2 librerias.
+    usuario1=request.POST['usuario']
+    contrasena1=request.POST['contra']
+    try:
+        user1=User.objects.het(username=usuario1)
+    except user.DoesNotExist:
+        messages.error(request,'El usuario o la conrtraseña son incorrectas')
+        return direct ('Iniciar')
+
+    pass_valida = check_password(contra1,user1.password)
+    if not pass_valida:
+        messages.error(request,'El usuario o la conraseña son incorrectas')
+        return redirect ('Iniciar')
+    usuario2 = Usuario.objects.get(username = usuario1,constrasennia=contra1)
+    user = authenticate(username=usuario1,password=contra1)
+    if user is not None:
+        login(request,user)
+        if(usuario2.tipousuario.idTipoUsuario==1):
+            return redirect ('menu_admin')
+            else:
+                contexto = {"usuario":usuario2}
+                
+                return render (request,'Inicio/index.html',contexto)
+                
+                
+    
+                return render(request,'menu/h_inicioSesion.html') 
 
 def f_iniciarSesion(request):
     return render(request,'menu/f_iniciarSesion.html')
