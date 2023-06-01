@@ -16,8 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from .views import index,collares,bandanas,correas,publicidad,carrodecompra,api,InicioSesion,modificar_contrasena,recuperar_contrasena,h_RegistrarUsuario,v_perfilusuario
-from .views import agregar_Accesorios,inicio_sesion_admin,borrar_Accesorios,listar_accesorios,modificarAccesorios
+from .views import index,collares,bandanas,correas,publicidad,carrodecompra,api,h_inicioSesion,h_modificarContrasena,h_recuperarContrasena,h_RegistrarUsuario,v_perfilusuario
+from .views import h_AgregarAccesorios,inicio_sesion_admin,borrar_Accesorios,h_listarAccesorios,h_modificarAccesorios
 from .views import bandana_GatoCeleste,bandana_GatoCuadrille,bandana_GatoFifi,bandana_GatoLocura,bandana_GatoStreet,bandana_PerroCuadrille,bandana_PerroRayasLocas,bandana_perroTrajeEleganteRojo,bandana_perroTrajeEleganteDorado
 from .views import collar_GatoAzul,collar_GatoCarreras,collar_gatoFreestyle,collar_gatoValentin,collar_gatoStreet,collar_PerroBlanco,collar_PerroCafe,collar_PerroRojo,collar_PerroVainilla
 from .views import correa_GatoAzul,correa_GatoCuadrilles,correa_GatoFreestyle,correa_GatoNegra,correa_GatoRosada,correa_PerroAzul,cr_perronegra,cr_perronegracadena,correa_PerroRojo
@@ -30,16 +30,16 @@ urlpatterns = [
     path('publicidad.html',publicidad,name="publicidad"),
     path('carrodecompra.html',carrodecompra,name="carrodecompra"),
     path('api.html',api,name="api"),
-    path('InicioSesion.html',InicioSesion,name="InicioSesion"),
-    path('modificar_contrasena.html',modificar_contrasena,name="modificar_contrasena"),
-    path('recuperar_contrasena.html',recuperar_contrasena,name="recuperar_contrasena"),
+    path('h_inicioSesion.html',h_inicioSesion,name="h_inicioSesion"),
+    path('h_modificarContrasena.html',h_modificarContrasena,name="h_modificarContrasena"),
+    path('h_recuperarContrasena.html',h_recuperarContrasena,name="h_recuperarContrasena"),
     path('h_RegistrarUsuario.html',h_RegistrarUsuario,name="h_RegistrarUsuario"),
     path('v_perfilusuario.html',v_perfilusuario,name="v_perfilusuario"),
-    path('agregar_Accesorios.html',agregar_Accesorios,name="agregar_Accesorios"),
+    path('h_AgregarAccesorios.html',h_AgregarAccesorios,name="h_AgregarAccesorios"),
     path('inicio_sesion_admin.html',inicio_sesion_admin,name="inicio_sesion_admin"),
     path('borrar_Accesorios.html',borrar_Accesorios,name="borrar_Accesorios"),
-    path('listar_accesorios.html',listar_accesorios,name="listar_accesorios"),
-    path('modificarAccesorios.html',modificarAccesorios,name="modificarAccesorios"),
+    path('h_listarAccesorios.html',h_listarAccesorios,name="h_listarAccesorios"),
+    path('h_modificarAccesorios.html',h_modificarAccesorios,name="h_modificarAccesorios"),
     path('bandana_GatoCeleste.html',bandana_GatoCeleste,name="bandana_GatoCeleste"),
     path('bandana_GatoCuadrille.html',bandana_GatoCuadrille,name="bandana_GatoCuadrille"),
     path('bandana_GatoFifi.html',bandana_GatoFifi,name="bandana_GatoFifi"),

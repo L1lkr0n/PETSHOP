@@ -16,14 +16,15 @@ def h_RegistrarUsuario(request):
 def f_RegistroUsuario(request):
     return render(request,'menu/f_RegistroUsuario.html')
 
-def recuperar_contrasena(request):
-    return render(request,'menu/recuperar_contrasena.html')
+def h_recuperarContrasena(request):
+    return render(request,'menu/h_recuperarContrasena.html')
 
-def modificar_contrasena(request):
-    return render(request,'menu/modificar_contrasena.html')
+def h_modificarContrasena(request):
+    return render(request,'menu/h_modificarContrasena.html')
 
-def InicioSesion(request):
-    return render(request,'menu/InicioSesion.html')
+def h_inicioSesion(request):
+
+    return render(request,'menu/h_inicioSesion.html')
 
 def collares(request):
     return render(request,'menu/collares.html')
@@ -121,11 +122,11 @@ def cr_perronegracadena(request):
 def correa_PerroRojo(request):
     return render(request,'menu/correa_PerroRojo.html')
 
-def modificarAccesorios(request):
-    return render(request, 'menu/modificarAccesorios.html')
+def h_modificarAccesorios(request):
+    return render(request, 'menu/h_modificarAccesorios.html')
 
-def listar_accesorios(request):
-    return render(request, 'menu/listar_accesorios.html')
+def h_listarAccesorios(request):
+    return render(request, 'menu/h_listarAccesorios.html')
 
 def inicio_sesion_admin(request):
     return render(request, 'menu/inicio_sesion_admin.html')
@@ -133,5 +134,5 @@ def inicio_sesion_admin(request):
 def borrar_Accesorios(request):
     return render(request, 'menu/borrar_Accesorios.html')
 
-def agregar_Accesorios(request):
-    return render(request, 'menu/agregar_Accesorios.html')
+def h_AgregarAccesorios(request):
+    return render(request, 'menu/h_AgregarAccesorios.html')
