@@ -68,8 +68,8 @@ def correas(request):
 def publicidad(request):
     return render(request,'menu/publicidad.html')
 
-def api(request):
-    return render(request,'menu/api.html')
+def ApiNoticias (request):
+    return render(request,'menu/ApiNoticias.html')
 
 def carrodecompra(request):
     return render(request, 'menu/carrodecompra.html')
@@ -170,11 +170,11 @@ def f_listadoAccesorios(request):
 def inicio_sesion_admin(request):
     return render(request, 'menu/inicio_sesion_admin.html')
 
-def borrar_Accesorios(request):
-    return render(request, 'menu/borrar_Accesorios.html')
+def h_borrarAccesorios(request):
+    return render(request, 'menu/h_borrarAccesorios.html')
 
-def f_borrar_Accesorios(request):
-    return render(request, 'menu/f_borrar_Accesorios.html')
+def f_h_borrarAccesorios(request):
+    return render(request, 'menu/f_h_borrarAccesorios.html')
 
 def h_AgregarAccesorios(request):
     return render(request, 'menu/h_AgregarAccesorios.html')
