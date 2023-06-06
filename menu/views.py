@@ -18,6 +18,18 @@ def h_RegistrarUsuario(request):
     return render(request,'menu/h_RegistrarUsuario.html')
 
 def f_RegistroUsuario(request):
+    nombre=request.POST["nombreUsuario"]
+    correo=request.POST["correo"]
+    contrasena=request.POST["contrasena"]
+    pregunta=request.POST["preguntaSecreta"]
+    respuesta=request.POST["respuesta"]   
+
+
+
+
+
+
+
     return render(request,'menu/f_RegistroUsuario.html')
 
 def h_recuperarContrasena(request):
