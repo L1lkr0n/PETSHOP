@@ -40,7 +40,6 @@
               </ul>
             <!--buscador-->
             <div class="buscador">
-              {% csrf_token %}
               <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Busca en petshop" aria-label="Buscar">
                 <button class="btn xxxx" type="submit"><i class="bi bi-search"></i></button>
@@ -55,7 +54,7 @@
       <h3 style="text-align: center;">Modificar</h3>
       <hr class="separador">
       <form action="{% url 'f_modificacionAccesorios' %}" id="form" nethod="post">
-        
+        {% csrf_token %}
         <label class="form-label"><h4>Objeto</h4></label>
         <div class="radio">
           <div class="form-check form-check-inline">

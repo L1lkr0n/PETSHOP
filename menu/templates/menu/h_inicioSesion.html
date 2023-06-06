@@ -56,7 +56,6 @@
         </ul>
         <!--buscador-->
         <div class="buscador">
-          {% csrf_token %}
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Busca en petshop" aria-label="Buscar">
             <button class="btn xxxx" type="submit"><i class="bi bi-search"></i></button>
@@ -114,6 +113,7 @@
         <div class="px-lg-5 py-lg-4 p-4 w-100 align-self-center">
           <h1 class="font-weight-bold mb-4">Bienvenicollares a PetShop</h1>
           <form action="{% url 'f_iniciarSesion' %}" class="form" id="form">
+            {% csrf_token %}
             <div class="form-input v_email">
               <label for="v_email" class="form-label">Correo Electronico</label>
               <input type="email" class="form-control" placeholder="Ingresa su correo" id="v_email"

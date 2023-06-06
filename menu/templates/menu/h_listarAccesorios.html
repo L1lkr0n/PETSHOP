@@ -54,6 +54,7 @@
       <h3 style="text-align: center;">Listar</h3>
       <hr class="separador">
       <form action="{% url 'f_listadoAccesorios' %}" nethod="get">
+        {% csrf_token %}
         <div class="consultar mt-4">
           <div class="box-body">
             <div class="table table-responsive">
