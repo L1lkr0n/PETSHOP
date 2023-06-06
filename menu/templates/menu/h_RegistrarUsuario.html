@@ -110,22 +110,22 @@
               {% csrf_token %}
               <div class="form-input v_nombre">
                 <label for="v_nombre" class="form-label">Nombre de usuario </label>
-                <input type="text" class="form-control" placeholder="Ingrese su nombre" id="v_nombre"> 
+                <input type="text" class="form-control" placeholder="Ingrese su nombre" id="v_nombre" name="nombreUsuario"> 
                 <p class="mensajeError"></p>
               </div>
               <div class="form-input v_gmail">
                 <label for="v_gmail" class="form-label">Correo Electronico</label>
-                <input type="email" class="form-control" placeholder="Ingresa su correo" id="v_gmail" aria-describedby="emailHelp">
+                <input type="email" class="form-control" placeholder="Ingresa su correo" id="v_gmail" aria-describedby="emailHelp" name="correo">
                 <p class="mensajeError"></p>
               </div>
               <div class="form-input v_contrasena">
                 <label for="v_contrasena" class="form-label">Contraseña</label>
-                <input type="password" class="form-control border-0 mb-2" placeholder="Ingresa tu contraseña" id="v_contrasena">
+                <input type="password" class="form-control border-0 mb-2" placeholder="Ingresa tu contraseña" id="v_contrasena" name="contrasena">
                 <p class="mensajeError"></p>
               </div>
               <div class="mb-3 v_pregunta">
                 <label for="v_pregunta" class="form-label">Pregunta secreta</label>
-                <select id="v_pregunta" class="form-select">
+                <select id="v_pregunta" class="form-select" name="preguntaSecreta">
                   <option>Selecciona una opción.</option>
                   <option>¿Nombre de su primera mascota?</option>
                   <option>¿Color favorito?</option>
@@ -135,7 +135,7 @@
               </div>
               <div class="form-input v_respuesta">
                 <label for="v_respuesta" class="form-label">Respuesta</label>
-                <input type="text" class="form-control" placeholder="Ingrese su respuesta" id="v_respuesta" aria-describedby="emailHelp">
+                <input type="text" class="form-control" placeholder="Ingrese su respuesta" id="v_respuesta" aria-describedby="emailHelp" name="respuesta">
                 <p class="mensajeError"></p>
               </div>
               <div class="form-termsAndConditions termsAndConditions">
