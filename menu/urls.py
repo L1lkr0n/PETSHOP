@@ -25,11 +25,11 @@ from .views import f_RegistroUsuario,f_recuperacionContrasena,f_modificacionCont
 
 urlpatterns = [
     path('',index,name="index"),
-    path('collares.html',collares,name="collares"),
-    path('bandanas.html',bandanas,name="bandanas"),
-    path('correas.html',correas,name="correas"),
-    path('publicidad.html',publicidad,name="publicidad"),
-    path('carrodecompra.html',carrodecompra,name="carrodecompra"),
+    path('collares/',collares,name="collares"),
+    path('bandanas/',bandanas,name="bandanas"),
+    path('correas/',correas,name="correas"),
+    path('publicidad/',publicidad,name="publicidad"),
+    path('carrodecompra/',carrodecompra,name="carrodecompra"),
     path('ApiNoticias.html',ApiNoticias,name="ApiNoticias"),
     path('f_RegistroUsuario.html',f_RegistroUsuario,name="f_RegistroUsuario"),
     path('f_recuperacionContrasena.html',f_recuperacionContrasena,name="f_recuperacionContrasena"),
