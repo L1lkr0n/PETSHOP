@@ -25,7 +25,7 @@ class Usuario(models.Model):
     Nombre = models.CharField(max_length=30)
     Apellido = models.CharField(max_length=30)
     Correo = models.CharField(max_length=30)
-    Num_Celular = models.CharField(max_length=15)
+    Num_Celular = models.CharField(max_lenght=15)
     Clave = models.CharField(max_length=30)
     rol = models.ForeignKey(Rol,on_delete=models.CASCADE)
     preguntas = models.ForeignKey(Preguntas,on_delete=models.CASCADE)

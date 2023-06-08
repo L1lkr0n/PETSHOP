@@ -78,7 +78,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.oracle',
         'NAME': '127.0.0.1:1521/xe',
-        'USER': 'petshop4',
+        'USER': 'petshop3',
         'PASSWORD': '123456789',
         'TEST': {
             'USER': 'default_test',
