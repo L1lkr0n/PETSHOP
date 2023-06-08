@@ -19,17 +19,20 @@ def h_RegistrarUsuario(request):
 
 def f_RegistroUsuario(request):
     nombre=request.POST["nombreUsuario"]
+    apellido=request.POST["apellidoUsuario"]
     correo=request.POST["correo"]
     contrasena=request.POST["contrasena"]
     pregunta=request.POST["preguntaSecreta"]
     respuesta=request.POST["respuesta"]
     rut=request.POST["rut"]
+    numerocelular=request.POST["numcelular"]
+    correoelectronico=request.POST["correo"]
 
 
     registroPregunta = Pregunta.objects.get(ID_Preguntas = pregunta)
     registrorol = Rol.objects.get(ID_Rol = 1)
 
-    Usuario.objects.create(Rut = rut, Nombre =  nombre,Apellido = apellido, preguntas = registroPregunta)
+    Usuario.objects.create(Rut = rut, Nombre =  nombre,Apellido = apellido, Num_Celular=numerocelular, Correo=correoelectronico ,Clave=contrasena ,preguntas = registroPregunta , Respuesta=respuesta)
     user = User.object.create_user(username = correo, email = correo, password = contrasena)
     user.is_active = True
     user.save()
