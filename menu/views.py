@@ -18,23 +18,23 @@ def h_RegistrarUsuario(request):
     return render(request,'menu/h_RegistrarUsuario.html')
 
 def f_RegistroUsuario(request):
-    if request.method is not "POST":
-          Exception("no se puede enviar")
-    else:
-          nombre=request.POST["nombreUsuario"]
-          correo=request.POST["correo"]
-          contrasena=request.POST["contrasena"]
-          pregunta=request.POST["preguntaSecreta"]
-          respuesta=request.POST["respuesta"]
+    nombre=request.POST["nombreUsuario"]
+    correo=request.POST["correo"]
+    contrasena=request.POST["contrasena"]
+    pregunta=request.POST["preguntaSecreta"]
+    respuesta=request.POST["respuesta"]
+    rut=request.POST["rut"]
 
-          obj=h_RegistrarUsuario.objects.create(
-                                                nombre=nombre,
-                                                correo=correo,
-                                                contrasena=contrasena,
-                                                pregunta=pregunta,
-                                                respuesta=respuesta)
-          obj.save()
-    return render(request,'menu/h_RegistrarUsuario.html')
+
+    registroPregunta = Pregunta.objects.get(ID_Preguntas = pregunta)
+    registrorol = Rol.objects.get(ID_Rol = 1)
+
+    Usuario.objects.create(Rut = rut, Nombre =  nombre,Apellido = apellido, preguntas = registroPregunta)
+    user = User.object.create_user(username = correo, email = correo, password = contrasena)
+    user.is_active = True
+    user.save()
+
+    return redirect('f_RegistroUsuario')
 
 def h_recuperarContrasena(request):
     return render(request,'menu/h_recuperarContrasena.html')

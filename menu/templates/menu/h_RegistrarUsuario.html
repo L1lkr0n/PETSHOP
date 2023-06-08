@@ -108,9 +108,24 @@
             <h1 class="font-weight-bold mb-4">Registro de usuario</h1>
             <form action="{% url 'f_RegistroUsuario' %}" method="POST" enctype="multipart/form-data" class="form" id="form" autocomplete="off">
               {% csrf_token %}
+              <div class="form-input v_rut">
+                <label for="v_rut" class="form-label">Rut </label>
+                <input type="text" class="form-control" placeholder="Ingrese su rut sin guion" id="v_rut" name="rutUsuario"> 
+                <p class="mensajeError"></p>
+              </div>
               <div class="form-input v_nombre">
                 <label for="v_nombre" class="form-label">Nombre de usuario </label>
                 <input type="text" class="form-control" placeholder="Ingrese su nombre" id="v_nombre" name="nombreUsuario"> 
+                <p class="mensajeError"></p>
+              </div>
+              <div class="form-input v_apellido">
+                <label for="v_apelldio" class="form-label">Apellido de usuario </label>
+                <input type="text" class="form-control" placeholder="Ingrese su apellido" id="v_apellido" name="apellidoUsuario"> 
+                <p class="mensajeError"></p>
+              </div>
+              <div class="form-input v_numCelular">
+                <label for="v_numCelular" class="form-label">Numero celular de usuario </label>
+                <input type="text" class="form-control" placeholder="Ingrese su Numero celular" id="v_numCelular" name="numCelularUsuario"> 
                 <p class="mensajeError"></p>
               </div>
               <div class="form-input v_gmail">
@@ -120,7 +135,12 @@
               </div>
               <div class="form-input v_contrasena">
                 <label for="v_contrasena" class="form-label">Contraseña</label>
-                <input type="password" class="form-control border-0 mb-2" placeholder="Ingresa tu contraseña" id="v_contrasena" name="contrasena">
+                <input type="password" class="form-control border-0 mb-2" placeholder="Ingresa su contraseña" id="v_contrasena" name="contrasena">
+                <p class="mensajeError"></p>
+              </div>
+              <div class="form-input v_Confirmarcontrasena">
+                <label for="v_Confirmarcontrasena" class="form-label">Contraseña</label>
+                <input type="password" class="form-control border-0 mb-2" placeholder="Confirme su contraseña" id="v_Confirmarcontrasena" name="Confirmarcontrasena">
                 <p class="mensajeError"></p>
               </div>
               <div class="mb-3 v_pregunta">

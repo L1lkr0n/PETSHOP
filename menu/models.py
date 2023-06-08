@@ -21,14 +21,15 @@ class Preguntas(models.Model):
 
 class Usuario(models.Model):
     ID_Usuario = models.AutoField(primary_key=True,verbose_name='Código del Usuario')
-    Rut = models.IntegerField()
+    Rut = models.CharField(max_length=10)
     Nombre = models.CharField(max_length=30)
     Apellido = models.CharField(max_length=30)
     Correo = models.CharField(max_length=30)
-    Num_Celular = models.IntegerField()
+    Num_Celular = models.CharField(max_lenght=15)
     Clave = models.CharField(max_length=30)
     rol = models.ForeignKey(Rol,on_delete=models.CASCADE)
     preguntas = models.ForeignKey(Preguntas,on_delete=models.CASCADE)
+    Respuesta = models.CharField(max_length=30, blank=True)
 
 class Direccion(models.Model):
     ID_Direccion = models.AutoField(primary_key=True,verbose_name='Código de la Dirección')
