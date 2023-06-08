@@ -4,43 +4,47 @@
         <link type="text/css" rel="stylesheet" href="{% static 'menu/css/collares.css' %}">
         {% endblock css %}
         {% block index %}
-        <div class="collar-index" onclick="location.href='collar_gatoStreet.html'">
-          <div class="row">
-            <!--datos-->
-            <div class="col">
-              <div class="row">
-                <p><h4>Collar Gato<br>Street</h4></p>
+        <div class="collar-index">
+          <a href="{% url 'collar_gatoStreet' %}">
+            <div class="row">
+             <!--datos-->
+              <div class="col">
+                <div class="row">
+                 <p><h4>Collar Gato<br>Street</h4></p>
+                </div>
+                <div class="row">
+                 <h2>
+                   <p><b>$1.990</b></p>
+                 </h2>
+                </div>
               </div>
-              <div class="row">
-                <h2>
-                  <p><b>$1.990</b></p>
-                </h2>
+             <!--imagen-->
+              <div class="col">
+               <img id="primercollar" src="{% static 'menu/img/c2 (2).jpg' %}">
               </div>
             </div>
-            <!--imagen-->
-            <div class="col">
-              <img id="primercollar" src="{% static 'menu/img/c2 (2).jpg' %}">
-            </div>
-          </div>
+          </a>
         </div>
         {% endblock index %}
         {% block correas %}
-        <div class="collar-correas" onclick="location.href='collar_GatoAzul.html'">
-          <div class="row">
-            <div class="col">
-              <div class="row">
-                <p><h4>Collar Gato<br>Azul</h4></p>
+        <div class="collar-correas">
+          <a href="{% url 'collar_GatoAzul' %}">
+            <div class="row">
+              <div class="col">
+                <div class="row">
+                 <p><h4>Collar Gato<br>Azul</h4></p>
+                </div>
+                <div class="row">
+                  <h2>
+                   <p><b>$1.990</b></p>
+                  </h2>
+                </div>
               </div>
-              <div class="row">
-                <h2>
-                  <p><b>$1.990</b></p>
-                </h2>
+              <div class="col">
+                <img id="cuartocollar" src="{% static 'menu/img/c5.jpg' %}">
               </div>
             </div>
-            <div class="col">
-              <img id="cuartocollar" src="{% static 'menu/img/c5.jpg' %}">
-            </div>
-          </div>
+          </a>
         </div>
         {% endblock correas %}
         {% block siete %}
