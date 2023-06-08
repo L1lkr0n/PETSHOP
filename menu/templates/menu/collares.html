@@ -48,22 +48,24 @@
         </div>
         {% endblock correas %}
         {% block siete %}
-        <div class="collar-siete" onclick="location.href='collar_PerroBlanco.html'">
-          <div class="row">
-            <div class="col">
-              <div class="row">
-                <p><h4>Collar Perro<br>Blanco</h4></p>
-              </div>
-              <div class="row">
-                <h2>
-                  <p><b>$990</b></p>
-                </h2>
-              </div>
+        <div class="collar-siete">
+          <a href="{% url 'collar_PerroBlanco' %}">
+           <div class="row">
+             <div class="col">
+               <div class="row">
+                 <p><h4>Collar Perro<br>Blanco</h4></p>
+               </div>
+               <div class="row">
+                 <h2>
+                   <p><b>$990</b></p>
+                 </h2>
+               </div>
+             </div>
+             <div class="col">
+               <img id="septimocollar" src="{% static 'menu/img/cp2.jpg' %}">
+             </div>
             </div>
-            <div class="col">
-              <img id="septimocollar" src="{% static 'menu/img/cp2.jpg' %}">
-            </div>
-          </div>
+          </a>
         </div>
         {% endblock siete %}
         {% block collares %}
