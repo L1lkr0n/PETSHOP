@@ -1,184 +1,214 @@
 {% extends 'menu/plantillaMascotas.html' %}
-        {%load static%}
-        {% block css %}
-        <link type="text/css" rel="stylesheet" href="{% static 'menu/css/collares.css' %}">
-        {% endblock css %}
-        {% block index %}
-        <div class="collar-index">
-          <a href="{% url 'collar_gatoStreet' %}">
-            <div class="row">
-             <!--datos-->
-              <div class="col">
-                <div class="row">
-                 <p><h4>Collar Gato<br>Street</h4></p>
-                </div>
-                <div class="row">
-                 <h2>
-                   <p><b>$1.990</b></p>
-                 </h2>
-                </div>
-              </div>
-             <!--imagen-->
-              <div class="col">
-               <img id="primercollar" src="{% static 'menu/img/c2 (2).jpg' %}">
-              </div>
-            </div>
-          </a>
+{%load static%}
+{% block css %}
+<link type="text/css" rel="stylesheet" href="{% static 'menu/css/collares.css' %}">
+{% endblock css %}
+{% block index %}
+<div class="collar-index">
+  <a href="{% url 'collar_gatoStreet' %}">
+    <div class="row">
+      <!--datos-->
+      <div class="col">
+        <div class="row">
+          <p>
+          <h4>Collar Gato<br>Street</h4>
+          </p>
         </div>
-        {% endblock index %}
-        {% block correas %}
-        <div class="collar-correas">
-          <a href="{% url 'collar_GatoAzul' %}">
-            <div class="row">
-              <div class="col">
-                <div class="row">
-                 <p><h4>Collar Gato<br>Azul</h4></p>
-                </div>
-                <div class="row">
-                  <h2>
-                   <p><b>$1.990</b></p>
-                  </h2>
-                </div>
-              </div>
-              <div class="col">
-                <img id="cuartocollar" src="{% static 'menu/img/c5.jpg' %}">
-              </div>
-            </div>
-          </a>
+        <div class="row">
+          <h2>
+            <p><b>$1.990</b></p>
+          </h2>
         </div>
-        {% endblock correas %}
-        {% block siete %}
-        <div class="collar-siete">
-          <a href="{% url 'collar_PerroBlanco' %}">
-           <div class="row">
-             <div class="col">
-               <div class="row">
-                 <p><h4>Collar Perro<br>Blanco</h4></p>
-               </div>
-               <div class="row">
-                 <h2>
-                   <p><b>$990</b></p>
-                 </h2>
-               </div>
-             </div>
-             <div class="col">
-               <img id="septimocollar" src="{% static 'menu/img/cp2.jpg' %}">
-             </div>
-            </div>
-          </a>
+      </div>
+      <!--imagen-->
+      <div class="col">
+        <img id="primercollar" src="{% static 'menu/img/c2 (2).jpg' %}">
+      </div>
+    </div>
+  </a>
+</div>
+{% endblock index %}
+{% block correas %}
+<div class="collar-correas">
+  <a href="{% url 'collar_GatoAzul' %}">
+    <div class="row">
+      <div class="col">
+        <div class="row">
+          <p>
+          <h4>Collar Gato<br>Azul</h4>
+          </p>
         </div>
-        {% endblock siete %}
-        {% block collares %}
-        <div class="collar-collares" onclick="location.href='collar_PerroVainilla.html'">
-          <div class="row">
-            <div class="col">
-              <div class="row">
-                <p><h4>Collar Perro<br>Vainilla</h4></p>
-              </div>
-              <div class="row">
-                <h2>
-                  <p><b>$9.990</b></p>
-                </h2>
-              </div>
-            </div>
-            <div class="col">
-              <img id="segundocollar" src="{% static 'menu/img/cp4.jpg' %}">
-            </div>
-          </div>
+        <div class="row">
+          <h2>
+            <p><b>$1.990</b></p>
+          </h2>
         </div>
-        {% endblock collares %}
-        {% block publicidad %}
-        <div class="collar-publicidad" onclick="location.href='collar_PerroRojo.html'">
-          <div class="row">
-            <div class="col">
-              <div class="row">
-                <p><h4>Collar Perro<br>Rojo</h4></p>
-              </div>
-              <div class="row">
-                <h2>
-                  <p><b>$8.990</b></p>
-                </h2>
-              </div>
-            </div>
-            <div class="col">
-              <img id="quintocollar" src="{% static 'menu/img/cp1.jpg' %}">
-            </div>
-          </div>
+      </div>
+      <div class="col">
+        <img id="cuartocollar" src="{% static 'menu/img/c5.jpg' %}">
+      </div>
+    </div>
+  </a>
+</div>
+{% endblock correas %}
+{% block siete %}
+<div class="collar-siete">
+  <a href="{% url 'collar_PerroBlanco' %}">
+    <div class="row">
+      <div class="col">
+        <div class="row">
+          <p>
+          <h4>Collar Perro<br>Blanco</h4>
+          </p>
         </div>
-        {% endblock publicidad %}
-        {% block ocho %}
-        <div class="collar-ocho" onclick="location.href='collar_PerroCafe.html'">
-          <div class="row">
-            <div class="col">
-              <div class="row">
-                <p><h4>Collar Perro<br>Café</h4></p>
-              </div>
-              <div class="row">
-                <h2>
-                  <p><b>$5.990</b></p>
-                </h2>
-              </div>
-            </div>
-            <div class="col">
-              <img id="octavocollar" src="{% static 'menu/img/cp3.jpg' %}">
-            </div>
-          </div>
+        <div class="row">
+          <h2>
+            <p><b>$990</b></p>
+          </h2>
         </div>
-        {% endblock ocho %}
-        {% block bandanas %}
-        <div class="collar-bandanas" onclick="location.href='collar_gatoFreestyle.html'">
-          <div class="row">
-            <div class="col">
-              <div class="row">
-                <p><h4>Collar Gato<br>Free Style</h4></p>
-              </div>
-              <div class="row">
-                <h2>
-                  <p><b>$2.990</b></p>
-                </h2>
-              </div>             
-            </div>
-            <div class="col">
-              <img id="tercercollar" src="{% static 'menu/img/c6.jpg' %}">
-            </div>
-          </div>
+      </div>
+      <div class="col">
+        <img id="septimocollar" src="{% static 'menu/img/cp2.jpg' %}">
+      </div>
+    </div>
+  </a>
+</div>
+{% endblock siete %}
+{% block collares %}
+<div class="collar-collares">
+  <a href="{% url 'collar_PerroVainilla' %}">
+    <div class="row">
+      <div class="col">
+        <div class="row">
+          <p>
+          <h4>Collar Perro<br>Vainilla</h4>
+          </p>
         </div>
-        {% endblock bandanas %}
-        {% block seis %}
-        <div class="collar-seis" onclick="location.href='collar_GatoCarreras.html'">
-          <div class="row">
-            <div class="col">
-              <div class="row">
-                <p><h4>Collar Gato<br>Carreras</h4></p>
-              </div>
-              <div class="row">
-                <h2>
-                  <p><b>$1.990</b></p>
-                </h2>
-              </div>
-            </div>
-            <div class="col">
-              <img id="sextocollar" src="{% static 'menu/img/c3 (2).jpg' %}">
-            </div>
-          </div>
+        <div class="row">
+          <h2>
+            <p><b>$9.990</b></p>
+          </h2>
         </div>
-        {% endblock seis %}
-        {% block nueve %}
-        <div class="collar-nueve" onclick="location.href='collar_gatoValentin.html'">
-          <div class="row">
-            <div class="col">
-              <div class="row">
-                <p><h4>Collar Gato<br>San Valentin</h4></p>
-              </div>
-              <div class="row">
-                <h2>
-                  <p><b>$7.990</b></p>
-                </h2>
-              </div>
-            </div>
-            <div class="col">
-              <img id="novenocollar" src="{% static 'menu/img/c9.jpg' %}">
-            </div>
-          </div>
+      </div>
+      <div class="col">
+        <img id="segundocollar" src="{% static 'menu/img/cp4.jpg' %}">
+      </div>
+    </div>
+  </a>
+</div>
+{% endblock collares %}
+{% block publicidad %}
+<div class="collar-publicidad">
+  <a href="{% url 'collar_PerroRojo' %}">
+    <div class="row">
+      <div class="col">
+        <div class="row">
+          <p>
+          <h4>Collar Perro<br>Rojo</h4>
+          </p>
         </div>
-        {% endblock nueve %}
+        <div class="row">
+          <h2>
+            <p><b>$8.990</b></p>
+          </h2>
+        </div>
+      </div>
+      <div class="col">
+        <img id="quintocollar" src="{% static 'menu/img/cp1.jpg' %}">
+      </div>
+    </div>
+  </a>
+</div>
+{% endblock publicidad %}
+{% block ocho %}
+<div class="collar-ocho">
+  <a href="{% url 'collar_PerroCafe' %}">
+    <div class="row">
+      <div class="col">
+        <div class="row">
+          <p>
+          <h4>Collar Perro<br>Café</h4>
+          </p>
+        </div>
+        <div class="row">
+          <h2>
+            <p><b>$5.990</b></p>
+          </h2>
+        </div>
+      </div>
+      <div class="col">
+        <img id="octavocollar" src="{% static 'menu/img/cp3.jpg' %}">
+      </div>
+    </div>
+  </a>
+</div>
+{% endblock ocho %}
+{% block bandanas %}
+<div class="collar-bandanas">
+  <a href="{% url 'collar_gatoFreestyle' %}">
+    <div class="row">
+      <div class="col">
+        <div class="row">
+          <p>
+          <h4>Collar Gato<br>Free Style</h4>
+          </p>
+        </div>
+        <div class="row">
+          <h2>
+            <p><b>$2.990</b></p>
+          </h2>
+        </div>
+      </div>
+      <div class="col">
+        <img id="tercercollar" src="{% static 'menu/img/c6.jpg' %}">
+      </div>
+    </div>
+  </a>
+</div>
+{% endblock bandanas %}
+{% block seis %}
+<div class="collar-seis">
+  <a href="{% url 'collar_GatoCarreras' %}">
+    <div class="row">
+      <div class="col">
+        <div class="row">
+          <p>
+          <h4>Collar Gato<br>Carreras</h4>
+          </p>
+        </div>
+        <div class="row">
+          <h2>
+            <p><b>$1.990</b></p>
+          </h2>
+        </div>
+      </div>
+      <div class="col">
+        <img id="sextocollar" src="{% static 'menu/img/c3 (2).jpg' %}">
+      </div>
+    </div>
+  </a>
+</div>
+{% endblock seis %}
+{% block nueve %}
+<div class="collar-nueve">
+  <a href="{% url 'collar_gatoValentin' %}">
+    <div class="row">
+      <div class="col">
+        <div class="row">
+          <p>
+          <h4>Collar Gato<br>San Valentin</h4>
+          </p>
+        </div>
+        <div class="row">
+          <h2>
+            <p><b>$7.990</b></p>
+          </h2>
+        </div>
+      </div>
+      <div class="col">
+        <img id="novenocollar" src="{% static 'menu/img/c9.jpg' %}">
+      </div>
+    </div>
+  </a>
+</div>
+{% endblock nueve %}

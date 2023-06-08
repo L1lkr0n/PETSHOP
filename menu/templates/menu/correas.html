@@ -1,194 +1,230 @@
 {% extends 'menu/plantillaMascotas.html' %}
-          {%load static%}
-          {% block css %}
-          <link type="text/css" rel="stylesheet" href="{% static 'menu/css/correas.css' %}">
-          {% endblock css %}         
-          {% block index %}
-          <div class="correa-index" onclick="location.href='correa_GatoRosada.html'">
-            <div class="row">
-              <!--datos-->
-              <div class="col">
-                <div class="row">
-                  <p><h4>Correa Gato<br>Rosada</h4></p>
-                </div>
-                <div class="row">
-                  <h2>
-                    <p><b>$2.990</b></p>
-                  </h2>
-                </div>
-              </div>
-              <!--imagen-->
-              <div class="col">
-                <img id="primercorrea" src="{% static 'menu/img/cc1 (1).jpg' %}">
-              </div>
-            </div>
-          </div>
-          {% endblock index %}
-          {% block correas %}
-          <div class="correa-correas" onclick="location.href='correa_GatoAzul.html'">
-            <div class="row">
-              <!--datos-->
-              <div class="col">
-                <div class="row">
-                  <p><h4>Correa Gato<br>Celeste</h4></p>
-                </div>
-                <div class="row">
-                  <h2>
-                    <p><b>$1.990</b></p>
-                  </h2>
-                </div>
-              </div>
-              <!--imagen-->
-              <div class="col">
-                <img id="cuartacorrea" src="{% static 'menu/img/cc2 (1).jpg' %}">
-              </div>
-            </div>
-          </div>
-          {% endblock correas %}
-          {% block siete %}
-          <div class="correa-siete" onclick="location.href='correa_PerroAzul.html'">
-            <div class="row">
-              <!--datos-->
-              <div class="col">
-                <div class="row">
-                  <p><h4>Correa Perro<br>Azul</h4></p>
-                </div>
-                <div class="row">
-                  <h2>
-                    <p><b>$1.990</b></p>
-                  </h2>
-                </div>
-              </div>
-              <!--imagen-->
-              <div class="col">
-                <img id="septimacorrea" src="{% static 'menu/img/c1 (1).jpg' %}">
-              </div>
-            </div>
-          </div>
-          {% endblock siete %}
-          {% block collares %}
-          <div class="correa-collares" onclick="location.href='cr_perronegracadena.html'">
-            <div class="row">
-              <!--datos-->
-              <div class="col">
-                <div class="row">
-                  <p><h4>Correa<br>Cadena Negra</h4></p>
-                </div>
-                <div class="row">
-                  <h2>
-                    <p><b>$8.990</b></p>
-                  </h2>
-                </div>
-              </div>
-              <!--imagen-->
-              <div class="col">
-                <img id="segundacorrea" src="{% static 'menu/img/c4 (1).jpg' %}">
-              </div>
-            </div>
-          </div>
-          {% endblock collares %}
-          {% block publicidad %}
-          <div class="correa-publicidad" onclick="location.href='correa_PerroRojo.html'">
-            <div class="row">
-              <!--datos-->
-              <div class="col">
-                <div class="row">
-                  <p><h4>Correa Perro<br>Roja</h4></p>
-                </div>
-                <div class="row">
-                  <h2>
-                    <p><b>$10.990</b></p>
-                  </h2>
-                </div>
-              </div>
-              <!--imagen-->
-              <div class="col">
-                <img id="quintacorrea" src="{% static 'menu/img/c3 (1).jpg' %}">
-              </div>
-            </div>
-          </div>
-          {% endblock publicidad %}
-          {% block ocho %}
-          <div class="correa-ocho" onclick="location.href='cr_perronegra.html'">
-            <div class="row">
-              <!--datos-->
-              <div class="col">
-                <div class="row">
-                  <p><h4>Correa Perro<br>Negra</h4></p>
-                </div>
-                <div class="row">
-                  <h2>
-                    <p><b>$11.990</b></p>
-                  </h2>
-                </div>
-              </div>
-              <!--imagen-->
-              <div class="col">
-                <img id="octavacorrea" src="{% static 'menu/img/c2 (1).jpg' %}">
-              </div>
-            </div>
-          </div>
-          {% endblock ocho %}
-          {% block bandanas %}
-          <div class="correa-bandanas" onclick="location.href='correa_GatoFreestyle.html'">
-            <div class="row">
-              <!--datos-->
-              <div class="col">
-                <div class="row">
-                  <p><h4>Correa Gato<br>Free Style</h4></p>
-                </div>
-                <div class="row">
-                  <h2>
-                    <p><b>$1.990</b></p>
-                  </h2>
-                </div>
-              </div>
-              <!--imagen-->
-              <div class="col">
-                <img id="terceracorrea" src="{% static 'menu/img/cc3 (2).jpg' %}">
-              </div>
-            </div>
-          </div>
-          {% endblock bandanas %}
-          {% block seis %}
-          <div class="correa-seis" onclick="location.href='correa_GatoCuadrilles.html'">
-            <div class="row">
-              <!--datos-->
-              <div class="col">
-                <div class="row">
-                  <p><h4>Correa Gato<br>Cuadrilles</h4></p>
-                </div>
-                <div class="row">
-                  <h2>
-                    <p><b>$7.990</b></p>
-                  </h2>
-                </div>
-              </div>
-              <!--imagen-->
-              <div class="col">
-                <img id="sextacorrea" src="{% static 'menu/img/cc4 (1).jpg' %}">
-              </div>
-            </div>
-          </div>
-          {% endblock seis %}
-          {% block nueve %}
-          <div class="correa-nueve" onclick="location.href='correa_GatoNegra.html'">
-            <div class="row">
-              <!--datos-->
-              <div class="col">
-                <div class="row">
-                  <p><h4>Correa Gato<br>Negra</h4></p>
-                </div>
-                <div class="row">
-                  <h2>
-                    <p><b>$12.990</b></p>
-                  </h2>
-                </div>
-              </div>
-              <!--imagen-->
-              <div class="col">
-                <img id="novenacorrea" src="{% static 'menu/img/cc5 (1).jpg' %}">
-              </div>
-            </div>
-          </div>
-          {% endblock nueve %}
+{%load static%}
+{% block css %}
+<link type="text/css" rel="stylesheet" href="{% static 'menu/css/correas.css' %}">
+{% endblock css %}
+{% block index %}
+<div class="correa-index">
+  <a href="{% url 'correa_GatoRosada' %}">
+    <div class="row">
+      <!--datos-->
+      <div class="col">
+        <div class="row">
+          <p>
+          <h4>Correa Gato<br>Rosada</h4>
+          </p>
+        </div>
+        <div class="row">
+          <h2>
+            <p><b>$2.990</b></p>
+          </h2>
+        </div>
+      </div>
+      <!--imagen-->
+      <div class="col">
+        <img id="primercorrea" src="{% static 'menu/img/cc1 (1).jpg' %}">
+      </div>
+    </div>
+  </a>
+</div>
+{% endblock index %}
+{% block correas %}
+<div class="correa-correas">
+  <a href="{% url 'correa_GatoAzul' %}">
+    <div class="row">
+      <!--datos-->
+      <div class="col">
+        <div class="row">
+          <p>
+          <h4>Correa Gato<br>Celeste</h4>
+          </p>
+        </div>
+        <div class="row">
+          <h2>
+            <p><b>$1.990</b></p>
+          </h2>
+        </div>
+      </div>
+      <!--imagen-->
+      <div class="col">
+        <img id="cuartacorrea" src="{% static 'menu/img/cc2 (1).jpg' %}">
+      </div>
+    </div>
+  </a>
+</div>
+{% endblock correas %}
+{% block siete %}
+<div class="correa-siete">
+  <a href="{% url 'correa_PerroAzul' %}">
+    <div class="row">
+      <!--datos-->
+      <div class="col">
+        <div class="row">
+          <p>
+          <h4>Correa Perro<br>Azul</h4>
+          </p>
+        </div>
+        <div class="row">
+          <h2>
+            <p><b>$1.990</b></p>
+          </h2>
+        </div>
+      </div>
+      <!--imagen-->
+      <div class="col">
+        <img id="septimacorrea" src="{% static 'menu/img/c1 (1).jpg' %}">
+      </div>
+    </div>
+  </a>
+</div>
+{% endblock siete %}
+{% block collares %}
+<div class="correa-collares">
+  <a href="{% url 'cr_perronegracadena' %}">
+    <div class="row">
+      <!--datos-->
+      <div class="col">
+        <div class="row">
+          <p>
+          <h4>Correa<br>Cadena Negra</h4>
+          </p>
+        </div>
+        <div class="row">
+          <h2>
+            <p><b>$8.990</b></p>
+          </h2>
+        </div>
+      </div>
+      <!--imagen-->
+      <div class="col">
+        <img id="segundacorrea" src="{% static 'menu/img/c4 (1).jpg' %}">
+      </div>
+    </div>
+  </a>
+</div>
+{% endblock collares %}
+{% block publicidad %}
+<div class="correa-publicidad">
+  <a href="{% url 'correa_PerroRojo' %}">
+    <div class="row">
+      <!--datos-->
+      <div class="col">
+        <div class="row">
+          <p>
+          <h4>Correa Perro<br>Roja</h4>
+          </p>
+        </div>
+        <div class="row">
+          <h2>
+            <p><b>$10.990</b></p>
+          </h2>
+        </div>
+      </div>
+      <!--imagen-->
+      <div class="col">
+        <img id="quintacorrea" src="{% static 'menu/img/c3 (1).jpg' %}">
+      </div>
+    </div>
+  </a>
+</div>
+{% endblock publicidad %}
+{% block ocho %}
+<div class="correa-ocho">
+  <a href="{% url 'cr_perronegra' %}">
+    <div class="row">
+      <!--datos-->
+      <div class="col">
+        <div class="row">
+          <p>
+          <h4>Correa Perro<br>Negra</h4>
+          </p>
+        </div>
+        <div class="row">
+          <h2>
+            <p><b>$11.990</b></p>
+          </h2>
+        </div>
+      </div>
+      <!--imagen-->
+      <div class="col">
+        <img id="octavacorrea" src="{% static 'menu/img/c2 (1).jpg' %}">
+      </div>
+    </div>
+  </a>
+</div>
+{% endblock ocho %}
+{% block bandanas %}
+<div class="correa-bandanas">
+  <a href="{% url 'correa_GatoFreestyle' %}">
+    <div class="row">
+      <!--datos-->
+      <div class="col">
+        <div class="row">
+          <p>
+          <h4>Correa Gato<br>Free Style</h4>
+          </p>
+        </div>
+        <div class="row">
+          <h2>
+            <p><b>$1.990</b></p>
+          </h2>
+        </div>
+      </div>
+      <!--imagen-->
+      <div class="col">
+        <img id="terceracorrea" src="{% static 'menu/img/cc3 (2).jpg' %}">
+      </div>
+    </div>
+  </a>
+</div>
+{% endblock bandanas %}
+{% block seis %}
+<div class="correa-seis">
+  <a href="{% url 'correa_GatoCuadrilles' %}">
+    <div class="row">
+      <!--datos-->
+      <div class="col">
+        <div class="row">
+          <p>
+          <h4>Correa Gato<br>Cuadrilles</h4>
+          </p>
+        </div>
+        <div class="row">
+          <h2>
+            <p><b>$7.990</b></p>
+          </h2>
+        </div>
+      </div>
+      <!--imagen-->
+      <div class="col">
+        <img id="sextacorrea" src="{% static 'menu/img/cc4 (1).jpg' %}">
+      </div>
+    </div>
+  </a>
+</div>
+{% endblock seis %}
+{% block nueve %}
+<div class="correa-nueve">
+  <a href="{% url 'correa_GatoNegra' %}">
+    <div class="row">
+      <!--datos-->
+      <div class="col">
+        <div class="row">
+          <p>
+          <h4>Correa Gato<br>Negra</h4>
+          </p>
+        </div>
+        <div class="row">
+          <h2>
+            <p><b>$12.990</b></p>
+          </h2>
+        </div>
+      </div>
+      <!--imagen-->
+      <div class="col">
+        <img id="novenacorrea" src="{% static 'menu/img/cc5 (1).jpg' %}">
+      </div>
+    </div>
+  </a>
+</div>
+{% endblock nueve %}
