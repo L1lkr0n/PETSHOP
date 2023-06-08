@@ -1,7 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.contrib.auth.models import User
 from django.contrib.auth.hashers import check_password
 from django.contrib.auth import authenticate,login, logout
+from .models import *
+from django.contrib import messages
 
 
 # Create your views here.
@@ -15,29 +17,35 @@ def bandanas(request):
     return render(request,'menu/bandanas.html')
 
 def h_RegistrarUsuario(request):
-    return render(request,'menu/h_RegistrarUsuario.html')
+    preguntas = Preguntas.objects.all()
+    contexto = {
+        "preg": preguntas
+    }
+    return render(request,'menu/h_RegistrarUsuario.html',contexto)
 
 def f_RegistroUsuario(request):
+    print("1")
     nombre=request.POST["nombreUsuario"]
     apellido=request.POST["apellidoUsuario"]
     correo=request.POST["correo"]
     contrasena=request.POST["contrasena"]
     pregunta=request.POST["preguntaSecreta"]
     respuesta=request.POST["respuesta"]
-    rut=request.POST["rut"]
-    numerocelular=request.POST["numcelular"]
+    rut=request.POST["rutUsuario"]
+    numerocelular=request.POST["numCelularUsuario"]
     correoelectronico=request.POST["correo"]
+    print("2")
 
-
-    registroPregunta = Pregunta.objects.get(ID_Preguntas = pregunta)
+    registroPregunta = Preguntas.objects.get(ID_Preguntas = pregunta)
     registrorol = Rol.objects.get(ID_Rol = 1)
-
-    Usuario.objects.create(Rut = rut, Nombre =  nombre,Apellido = apellido, Num_Celular=numerocelular, Correo=correoelectronico ,Clave=contrasena ,preguntas = registroPregunta , Respuesta=respuesta)
-    user = User.object.create_user(username = correo, email = correo, password = contrasena)
+    print("3")
+    Usuario.objects.create(Rut = rut, Nombre =  nombre,Apellido = apellido, Num_Celular=numerocelular, Correo=correoelectronico ,Clave=contrasena ,preguntas = registroPregunta , Respuesta=respuesta, rol = registrorol)
+    user = User.objects.create_user(username = correo, email = correo, password = contrasena)
     user.is_active = True
     user.save()
-
-    return redirect('f_RegistroUsuario')
+    print("4")
+    messages.success(request, "Usuario Registrado Correctamente")
+    return redirect('h_RegistrarUsuario')
 
 def h_recuperarContrasena(request):
     return render(request,'menu/h_recuperarContrasena.html')

@@ -7,7 +7,7 @@ const form = document.getElementById("form");
 const listInputs = document.querySelectorAll(".form-input");
 
 form.addEventListener("submit", (e) => {
-  e.preventDefault();
+  
   let condicion = validacionForm();
   if (condicion) {
     enviarFormulario();
@@ -46,6 +46,7 @@ function validacionForm() {
   condicion = false;
   } else {
   mostrarMensajeError("termsAndConditions", "");
+  e.preventDefault();
   }
 
   return condicion;
