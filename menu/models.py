@@ -24,7 +24,7 @@ class Usuario(models.Model):
     Rut = models.CharField(max_length=10)
     Nombre = models.CharField(max_length=30)
     Apellido = models.CharField(max_length=30)
-    Correo = models.CharField(max_length=30)
+    Correo = models.CharField(max_length=100)
     Num_Celular = models.CharField(max_length=15)
     Clave = models.CharField(max_length=30)
     rol = models.ForeignKey(Rol,on_delete=models.CASCADE)
