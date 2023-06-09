@@ -10,8 +10,12 @@ from django.contrib import messages
 def index(request):
     return render(request,'menu/index.html')
 
-def v_perfilusuario(request):
-    return render(request, 'menu/v_perfilusuario.html')
+def v_perfilusuario(request,pk):
+    usuario=Usuario.objects.get(ID_Usuario=pk)
+    contexto={
+        "usuario":usuario
+    }
+    return render(request, 'menu/v_perfilusuario.html',contexto)
 
 def bandanas(request):
     return render(request,'menu/bandanas.html')
