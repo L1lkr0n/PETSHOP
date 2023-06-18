@@ -7,6 +7,7 @@ from django.contrib import messages
 
 
 # Create your views here.
+
 def index(request):
     return render(request,'menu/index.html')
 
@@ -72,14 +73,14 @@ def f_iniciarSesion(request):
     contrasena1=request.POST['contra']
     try:
         user1= User.objects.get(username=usuario1)
-    except user.DoesNotExist:
-        messages.error(request,'El usuario o la conrtraseña son incorrectas')
-        return redirect('Iniciar')
+    except User.DoesNotExist:
+        messages.error(request,'El usuario o la contraseña son incorrectas')
+        return redirect('h_inicioSesion')
 
     pass_valida = check_password(contrasena1,user1.password)
     if not pass_valida:
-        messages.error(request,'El usuario o la conraseña son incorrectas')
-        return redirect ('Iniciar')
+        messages.error(request,'El usuario o la contraseña son incorrectas')
+        return redirect ('h_inicioSesion')
     usuario2 = Usuario.objects.get(Correo = usuario1,Clave=contrasena1)
     user = authenticate(username=usuario1,password=contrasena1)
     if user is not None:
