@@ -71,24 +71,29 @@ def f_iniciarSesion(request):
     usuario1=request.POST['usuario']
     contrasena1=request.POST['contra']
     try:
-        user1=User.objects.het(username=usuario1)
+        user1= User.objects.get(username=usuario1)
     except user.DoesNotExist:
         messages.error(request,'El usuario o la conrtraseña son incorrectas')
         return redirect('Iniciar')
 
-    pass_valida = check_password(contra1,user1.password)
+    pass_valida = check_password(contrasena1,user1.password)
     if not pass_valida:
         messages.error(request,'El usuario o la conraseña son incorrectas')
         return redirect ('Iniciar')
-    usuario2 = Usuario.objects.get(username = usuario1,constrasennia=contra1)
-    user = authenticate(username=usuario1,password=contra1)
+    usuario2 = Usuario.objects.get(Correo = usuario1,Clave=contrasena1)
+    user = authenticate(username=usuario1,password=contrasena1)
     if user is not None:
         login(request,user)
-        if(usuario2.tipousuario.idTipoUsuario==1):
-            return redirect ('menu_admin')
+        if(usuario2.rol.ID_Rol==2):
+            request.session['usuario'] = user1.username
+            return redirect ('h_AgregarAccesorios')
         else:
-            contexto = {"usuario":usuario2}
+            request.session['usuario'] = user1.username
+            return redirect ('index')
+    else:
+        messages.error(request,'El usuario')
     return render(request,'menu/f_iniciarSesion.html')
+
 
 def collares(request):
     return render(request,'menu/collares.html')
