@@ -96,7 +96,7 @@ def f_iniciarSesion(request):
             request.session['usuario'] = user1.username
             return redirect ('index')
     else:
-        messages.error(request,'El usuario')
+        messages.error(request,'El usuario no existe')
     return render(request,'menu/f_iniciarSesion.html')
 
 
