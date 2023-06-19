@@ -8,6 +8,10 @@ from django.contrib import messages
 
 # Create your views here.
 
+def cerrar_sesion(request):
+    logout(request)
+    return redirect('index')
+
 def index(request):
     return render(request,'menu/index.html')
 

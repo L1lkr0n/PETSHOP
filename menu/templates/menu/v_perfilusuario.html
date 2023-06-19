@@ -61,11 +61,16 @@
               </form>
             </div>
             <!--inicio sesion-->
-            <a class="navbar-brand" href="h_inicioSesion.html"><i class="bi bi-person-fill"></i><b></b></a>
+            <a class="navbar-brand" href="{% url 'h_inicioSesion' %}"><i class="bi bi-person-fill"></i><b></b></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
+            <a class="navbar-brand" href="{% url 'cerrar-sesion' %}"><i class="bi bi-x-circle"></i><b></b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
           </div>
         </div>
     </nav>
@@ -90,21 +95,19 @@
         <div class="perfil-usuario-body">
             <div class="perfil-usuario-bio">
                 <h3 class="titulo">{{usuario.Nombre}}</h3>
-                <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                
             </div>
             <div class="perfil-usuario-footer">
                 <ul class="lista-datos">
-                    <li><i class="icono fas fa-map-signs"></i> Direccion de usuario:</li>
-                    <li><i class="icono fas fa-phone-alt"></i> Telefono:</li>
-                    <li><i class="icono fas fa-briefcase"></i> Trabaja en.</li>
-                    <li><i class="icono fas fa-building"></i> Cargo</li>
+                  <li><i class="icono fas fa-address-card"></i> RUT: {{usuario.Rut}}</li>
+                  <li><i class="icono fas fa-address-book"></i> Nombre: {{usuario.Nombre}}</li>
+                    <li><i class="icono fas fa-address-book"></i> Apellido: {{usuario.Apellido}}</li>
+                    
+                    
                 </ul>
                 <ul class="lista-datos">
-                    <li><i class="icono fas fa-map-marker-alt"></i> Ubicacion.</li>
-                    <li><i class="icono fas fa-calendar-alt"></i> Fecha nacimiento.</li>
-                    <li><i class="icono fas fa-user-check"></i> Registro.</li>
-                    <li><i class="icono fas fa-share-alt"></i> Redes sociales.</li>
+                  <li><i class="icono fas fa-phone-alt"></i> Telefono: {{usuario.Num_Celular}}</li>
+                  <li><i class="icono fa fa-at"></i> Correo: {{usuario.Correo}} </li>
                 </ul>
             </div>
             <div class="redes-sociales">

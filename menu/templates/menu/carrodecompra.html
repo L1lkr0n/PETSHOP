@@ -39,7 +39,7 @@
                     <li>
                       <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="{% url 'v_perfilusuario' %}">Editar perfil</a></li>
+                    <li><a class="dropdown-item" href="{% url 'v_perfilusuario' user.id %}">Editar perfil</a></li>
                     <li>
                       <hr class="dropdown-divider">
                     </li>
@@ -64,6 +64,11 @@
               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
+            <a class="navbar-brand" href="{% url 'cerrar-sesion' %}"><i class="bi bi-x-circle"></i><b></b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
           </div>
         </div>
     </nav>

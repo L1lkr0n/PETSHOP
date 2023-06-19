@@ -16,12 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from .views import index,collares,bandanas,correas,publicidad,carrodecompra,ApiNoticias,h_inicioSesion,h_modificarContrasena,h_recuperarContrasena,h_RegistrarUsuario,v_perfilusuario
-from .views import h_AgregarAccesorios,inicio_sesion_admin,h_borrarAccesorios,h_listarAccesorios,h_modificarAccesorios
-from .views import bandana_GatoCeleste,bandana_GatoCuadrille,bandana_GatoFifi,bandana_GatoLocura,bandana_GatoStreet,bandana_PerroCuadrille,bandana_PerroRayasLocas,bandana_perroTrajeEleganteRojo,bandana_perroTrajeEleganteDorado
-from .views import collar_GatoAzul,collar_GatoCarreras,collar_gatoFreestyle,collar_gatoValentin,collar_gatoStreet,collar_PerroBlanco,collar_PerroCafe,collar_PerroRojo,collar_PerroVainilla
-from .views import correa_GatoAzul,correa_GatoCuadrilles,correa_GatoFreestyle,correa_GatoNegra,correa_GatoRosada,correa_PerroAzul,cr_perronegra,cr_perronegracadena,correa_PerroRojo
-from .views import f_RegistroUsuario,f_recuperacionContrasena,f_modificacionContrasena,f_iniciarSesion,f_modificacionAccesorios,f_listadoAccesorios,f_AgregagoAccesorios,f_h_borrarAccesorios
+from .views import *
 
 urlpatterns = [
     path('',index,name="index"),
@@ -35,6 +30,7 @@ urlpatterns = [
     path('f_recuperacionContrasena/',f_recuperacionContrasena,name="f_recuperacionContrasena"),
     path('f_modificacionContrasena/',f_modificacionContrasena,name="f_modificacionContrasena"),
     path('f_iniciarSesion/',f_iniciarSesion,name="f_iniciarSesion"),
+    path('cerrar-sesion/', cerrar_sesion, name='cerrar-sesion'),
     path('f_modificacionAccesorios/',f_modificacionAccesorios,name="f_modificacionAccesorios"),
     path('f_listadoAccesorios/',f_listadoAccesorios,name="f_listadoAccesorios"),
     path('f_AgregagoAccesorios/',f_AgregagoAccesorios,name="f_AgregagoAccesorios"),
@@ -43,7 +39,7 @@ urlpatterns = [
     path('h_modificarContrasena/',h_modificarContrasena,name="h_modificarContrasena"),
     path('h_recuperarContrasena/',h_recuperarContrasena,name="h_recuperarContrasena"),
     path('h_RegistrarUsuario/',h_RegistrarUsuario,name="h_RegistrarUsuario"),
-    path('v_perfilusuario/',v_perfilusuario,name="v_perfilusuario"),#<str:pk>/
+    path('v_perfilusuario/<str:pk>/',v_perfilusuario,name="v_perfilusuario"),#<str:pk>/
     path('h_AgregarAccesorios/',h_AgregarAccesorios,name="h_AgregarAccesorios"),
     path('inicio_sesion_admin/',inicio_sesion_admin,name="inicio_sesion_admin"),
     path('h_borrarAccesorios/',h_borrarAccesorios,name="h_borrarAccesorios"),

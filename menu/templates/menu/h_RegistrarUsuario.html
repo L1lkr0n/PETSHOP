@@ -44,7 +44,7 @@
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="{% url 'v_perfilusuario' %}">Editar perfil</a></li>
+              <li><a class="dropdown-item" href="{% url 'v_perfilusuario' user.id %}">Editar perfil</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
@@ -154,7 +154,7 @@
               <p class="mensajeError"></p>
             </div>
             <div class="form-input v_Confirmarcontrasena">
-              <label for="v_Confirmarcontrasena" class="form-label">ConfirmarContraseña</label>
+              <label for="v_Confirmarcontrasena" class="form-label">Confirmar Contraseña</label>
               <input type="password" class="form-control border-0 mb-2" placeholder="Confirme su contraseña"
                 id="v_Confirmarcontrasena" name="Confirmarcontrasena">
               <p class="mensajeError"></p>
