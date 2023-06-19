@@ -66,6 +66,17 @@ def h_recuperarContrasena(request):
 def f_recuperacionContrasena(request):
     correo=request.POST["correorecuperar"]
     respuesta=request.POST["respuestarecuperar"]
+    preguntaS=request.POST["respuestasecreta"]
+
+    correo2 = Usuario.objects.get(Correo = correo,Respuesta=respuesta,preguntas=preguntaS)
+    if  correo2 is not None:
+        login(request, correo2)
+        if(correo2.rol.ID_Rol==1 and correo2.Correo==correo and correo2.Respuesta==respuesta and correo2.preguntas==preguntaS):
+            return redirect ('h_modificarContrasena')
+        else:
+            return redirect ('h_recuperarContrasena')
+    else:
+        messages.error(request,'El usuario no existe')
     
     return render(request,'menu/f_recuperacionContrasena.html')
 

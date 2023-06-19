@@ -115,7 +115,7 @@
               </div>
               <div class="mb-3">
                 <label for="disabledSelect" class="form-label">Pregunta secreta de recuperación</label>
-                <select id="disabledSelect" class="form-select">
+                <select id="disabledSelect" class="form-select" name="preguntasecreta">
                   {% for p in preg%}
                   <option value="{{ p.ID_Preguntas}}">{{p.Pregunta}}</option>
                   {% endfor %}
