@@ -40,7 +40,7 @@
                 <li>
                   <hr class="dropdown-divider">
                 </li>
-                <li><a class="dropdown-item" href="{% url 'v_perfilusuario' %}">Editar perfil</a></li>
+                <li><a class="dropdown-item" href="{% url 'v_perfilusuario' user.id %}">Editar perfil</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
@@ -110,21 +110,20 @@
               {% csrf_token %}
               <div class="form-input v_email">
                 <label for="v_email" class="form-label">Correo Electronico</label>
-                <input type="email" class="form-control" placeholder="Ingresa su correo" id="v_email" aria-describedby="emailHelp">
+                <input type="email" class="form-control" placeholder="Ingresa su correo" id="v_email" aria-describedby="emailHelp" name="correorecuperar">
                 <p class="mensajeError"></p>
               </div>
               <div class="mb-3">
                 <label for="disabledSelect" class="form-label">Pregunta secreta de recuperación</label>
                 <select id="disabledSelect" class="form-select">
-                  <option>Selecciona una opción.</option>
-                  <option>¿Nombre de su primera mascota?</option>
-                  <option>¿Color favorito?</option>
-                  <option>¿Cual es su apodo?</option>
+                  {% for p in preg%}
+                  <option value="{{ p.ID_Preguntas}}">{{p.Pregunta}}</option>
+                  {% endfor %}
                 </select>
               </div>
               <div class="form-input v_respuesta">
                 <label for="v_respuesta" class="form-label">Respuesta</label>
-                <input type="text" class="form-control" placeholder="Ingrese su respuesta" id="v_respuesta" aria-describedby="emailHelp">
+                <input type="text" class="form-control" placeholder="Ingrese su respuesta" id="v_respuesta" aria-describedby="emailHelp" name="respuestarecuperar">
                 <p class="mensajeError"></p>
               </div>
               <div class="form-termsAndConditions termsAndConditions">
@@ -136,9 +135,6 @@
               <button type="submit" class="btn btn-primary w-100">Recuperar contraseña</button>
               <div class="text-center">
               <p class="mensajeCorrecto"></p>
-              </div>
-              <div class="text-center">
-              <a href="{% url 'h_modificarContrasena' %}"  id="emailHelp" class="form-text text-muted text-decoration-none">¿No recuerdas la respuesta?.</a>
               </div>
             </form>
           </div>

@@ -57,9 +57,16 @@ def f_RegistroUsuario(request):
     return redirect('h_RegistrarUsuario')
 
 def h_recuperarContrasena(request):
-    return render(request,'menu/h_recuperarContrasena.html')
+    preguntas = Preguntas.objects.all()
+    contexto = {
+        "preg": preguntas
+    }
+    return render(request,'menu/h_recuperarContrasena.html',contexto)
 
 def f_recuperacionContrasena(request):
+    correo=request.POST["correorecuperar"]
+    respuesta=request.POST["respuestarecuperar"]
+    
     return render(request,'menu/f_recuperacionContrasena.html')
 
 def h_modificarContrasena(request):
