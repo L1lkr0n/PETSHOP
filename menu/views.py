@@ -66,7 +66,7 @@ def h_recuperarContrasena(request):
 def f_recuperacionContrasena(request):
     correo=request.POST["correorecuperar"]
     respuesta=request.POST["respuestarecuperar"]
-    preguntaS=request.POST["respuestasecreta"]
+    preguntaS=request.POST["preguntasecreta"]
 
     correo2 = Usuario.objects.get(Correo = correo,Respuesta=respuesta,preguntas=preguntaS)
     if  correo2 is not None:
