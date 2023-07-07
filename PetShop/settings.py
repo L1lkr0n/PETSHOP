@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'menu',
     'api_noticias',
     'segunda_api',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
