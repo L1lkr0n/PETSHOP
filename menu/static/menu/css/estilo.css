@@ -1,64 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
-* {
-    margin: 0;
-    padding: 0;
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat';
 }
-
-body {
-    background: linear-gradient(to right,#9441e7, #4e92ff, #1b8892);
-    justify-content: center;
-    height: 100vh;
-}
-
 .container{
     max-width: 1200px;
     margin: auto;
-    background: linear-gradient(to right,#9441e7, #4e92ff, #1b8892);
-    color: rgb(0, 0, 0);
-    border-radius: 10px;
-    /*margin: 40px 0px 20px 450px;*/
-    justify-content: center;
-    align-items: center;
 }
-
-.container_titulo{
-    background-color: rgba(19, 18, 19, 0.774);
-    color: white;
-    border-radius: 10px;
-    /*margin: 40px 0px 20px 450px;*/
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    border: 1px solid #ffffff;
-}
-
 h1{
     text-align: center;
     color:#fc0505 ;
-    display: flex;
-    justify-content: center;
-    
 }
-
 header{
     display: flex;
     justify-content: space-between;
 }
-.mi-clase{
+nav{
     text-align: center;
     margin-bottom: 20px;
 }
-.mi-clase span{
+nav span{
     display: inline-block;
+    background-color: #000;
     color: #fff;
     padding: 5px 10px;
     border-radius: 30px;
     margin: 0 5px;
     cursor: pointer;
 }
-.mi-clase span:hover{
+nav span:hover{
     color: red;
 }
 header input{
@@ -108,24 +78,4 @@ header button{
 }
 .container-noticias #btnSiguiente:hover{
     color: #fc0505;
-}
-.container-fluid .row {
-    margin-top: 30px;
-}
-@media screen and (max-width: 376px) {
-    .container {
-        width: 300px;
-    }
-
-    .container .msj {
-        font-size: 20px;
-    }
-
-    .col-md-2 {
-        text-align: center;
-        align-items: center;
-    }
-    body{
-        max-width: 376px;
-    }
 }
