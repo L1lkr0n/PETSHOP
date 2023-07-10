@@ -2,6 +2,7 @@ from django.shortcuts import render,redirect
 from django.contrib.auth.models import User
 from django.contrib.auth.hashers import check_password
 from django.contrib.auth import authenticate,login, logout
+from django.contrib.auth.decorators import login_required
 from .models import *
 from django.contrib import messages
 
@@ -14,8 +15,9 @@ def cerrar_sesion(request):
 
 def index(request):
     return render(request,'menu/index.html')
-
+@login_required(login_url='/h_inicioSesion')
 def v_perfilusuario(request,pk):
+   
     usuario=Usuario.objects.get(ID_Usuario=pk)
     contexto={
         "usuario":usuario
@@ -213,12 +215,15 @@ def cr_perronegracadena(request):
 def correa_PerroRojo(request):
     return render(request,'menu/correa_PerroRojo.html')
 
+
+@login_required(login_url='/h_inicioSesion')
 def h_modificarAccesorios(request):
     return render(request, 'menu/h_modificarAccesorios.html')
 
 def f_modificacionAccesorios(request):
     return render(request, 'menu/f_modificacionAccesorios.html')
 
+@login_required(login_url='/h_inicioSesion')
 def h_listarAccesorios(request):
     return render(request, 'menu/h_listarAccesorios.html')
 
@@ -228,12 +233,14 @@ def f_listadoAccesorios(request):
 def inicio_sesion_admin(request):
     return render(request, 'menu/inicio_sesion_admin.html')
 
+@login_required(login_url='/h_inicioSesion')
 def h_borrarAccesorios(request):
     return render(request, 'menu/h_borrarAccesorios.html')
 
 def f_h_borrarAccesorios(request):
     return render(request, 'menu/f_h_borrarAccesorios.html')
 
+@login_required(login_url='/h_inicioSesion')
 def h_AgregarAccesorios(request):
     return render(request, 'menu/h_AgregarAccesorios.html')
 
