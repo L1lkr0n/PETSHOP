@@ -134,8 +134,8 @@ def correas(request):
 def publicidad(request):
     return render(request,'menu/publicidad.html')
 
-def ApiNoticias (request):
-    return render(request,'menu/ApiNoticias.html')
+def Api_rickandmorty (request):
+    return render(request,'menu/Api_rickandmorty.html')
 
 def carrodecompra(request):
     return render(request, 'menu/carrodecompra.html')
