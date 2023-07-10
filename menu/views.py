@@ -70,12 +70,13 @@ def f_recuperacionContrasena(request):
     respuesta=request.POST["respuestarecuperar"]
     preguntaS=request.POST["preguntasecreta"]
 
-    recu = Usuario.objects.get(Correo = correo,Respuesta=respuesta,preguntas=preguntaS)
-    if  recu is not None:
-        if(recu.rol.ID_Rol==1 and recu.Correo==correo and recu.Respuesta==respuesta and recu.preguntas==preguntaS):
+    correo2 = Usuario.objects.get(Correo = correo,Respuesta=respuesta,preguntas=preguntaS)
+    if  correo2 is not None:
+        login(request, correo2)
+        if(correo2.rol.ID_Rol==1 and correo2.Correo==correo and correo2.Respuesta==respuesta and correo2.preguntas==preguntaS):
             return redirect ('h_modificarContrasena')
         else:
-            return redirect ('h_modificarContrasena')
+            return redirect ('h_recuperarContrasena')
     else:
         messages.error(request,'El usuario no existe')
     
