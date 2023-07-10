@@ -85,6 +85,12 @@ def h_modificarContrasena(request):
     return render(request,'menu/h_modificarContrasena.html')
 
 def f_modificacionContrasena(request):
+    correo = request.POST['correomodificar']
+
+
+
+
+
     return render(request,'menu/f_modificacionContrasena.html')
 
 def h_inicioSesion(request):

@@ -110,17 +110,17 @@
               {% csrf_token %}
               <div class="form-input v_email">
                 <label for="v_email" class="form-label">Correo Electronico</label>
-                <input type="email" class="form-control" placeholder="Ingresa su correo" id="v_email" aria-describedby="emailHelp">
+                <input type="email" class="form-control" placeholder="Ingresa su correo" id="v_email" aria-describedby="emailHelp" name="correomodificar">
                 <p class="mensajeError"></p>
               </div>
               <div class="form-input v_contrasenia">
                 <label for="v_contrasenia" class="form-label">Ingrese su nueva contraseña</label>
-                <input type="password" class="form-control" placeholder="Ingrese su respuesta" id="v_contrasenia" aria-describedby="emailHelp">
+                <input type="password" class="form-control" placeholder="Ingrese su respuesta" id="v_contrasenia" aria-describedby="emailHelp" name="contrasenamodificar">
                 <p class="mensajeError"></p>
               </div>
               <div class="form-input v_contrasenia2">
                 <label for="v_contrasenia2" class="form-label">Ingrese nuevamente su contraseña</label>
-                <input type="password" class="form-control" placeholder="Ingrese su respuesta" id="v_contrasenia2" aria-describedby="emailHelp">
+                <input type="password" class="form-control" placeholder="Ingrese su respuesta" id="v_contrasenia2" aria-describedby="emailHelp" name="contrasenaconfirmar">
                 <p class="mensajeError"></p>
               </div>
               <div class="form-termsAndConditions termsAndConditions">
