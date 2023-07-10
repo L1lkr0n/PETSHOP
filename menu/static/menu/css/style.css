@@ -28,9 +28,6 @@ article{
 }
 
 <!--navbar-->
-nav{
-    height:auto;
-}
 .me-2 {
     border-radius: 10px;
     width: 300px;
@@ -94,6 +91,7 @@ b {
     color: black;
     background-color: #ffffff;
 }
+
 
 body{
     background-color: #000;
