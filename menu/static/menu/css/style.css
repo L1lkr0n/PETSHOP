@@ -10,7 +10,7 @@ h1{
 
 main{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 18px;
 }
 
@@ -94,5 +94,5 @@ b {
 
 
 body{
-    background-color: #000;
+    background: linear-gradient(to right,#9441e7, #4e92ff, #1b8892) !important ;
 }
