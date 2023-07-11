@@ -108,6 +108,16 @@
                 <ul class="lista-datos">
                   <li><i class="icono fas fa-phone-alt"></i> Telefono: {{usuario.Num_Celular}}</li>
                   <li><i class="icono fa fa-at"></i> Correo: {{usuario.Correo}} </li>
+                  <style>
+                    button {
+    background-color:#5e5e8d;
+    color: #fff;
+
+  }
+                  </style>
+                  <a href="{% url 'reset_password' %}">
+                    <button class="lista-datos icono fas fa"> * Modificar Contraseña</button>
+                  </a> 
                 </ul>
             </div>
             <div class="redes-sociales">
